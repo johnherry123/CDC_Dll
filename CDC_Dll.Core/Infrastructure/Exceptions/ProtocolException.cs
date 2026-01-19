@@ -1,6 +1,14 @@
-namespace ENTER_NAMESPACE;
+using DeviceService.Core.Domain.Errors;
 
-public class ProtocolException
+namespace DeviceService.Core.Infrastructure.Exceptions;
+
+public class ProtocolException: Exception
 {
 
+  public ErrorCode Code {get; init;}
+    public ProtocolException(ErrorCode code, string message, Exception? inner = null)
+        : base(message, inner)
+    {
+        Code = code;
+    }
 }

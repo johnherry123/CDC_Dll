@@ -1,8 +1,8 @@
-using CDC_Dll.Core.Domain.Diagnostics;
-using CDC_Dll.Core.Domain.Errors;
-using CDC_Dll.Core.Infrastructure.Exceptions;
+using DeviceService.Core.Domain.Diagnostics;
+using DeviceService.Core.Domain.Errors;
+using DeviceService.Core.Infrastructure.Exceptions;
 
-namespace CDC_Dll.Core.Application.Errors;
+namespace DeviceService.Core.Application.Errors;
 
 public static class ErrorMapper
 {

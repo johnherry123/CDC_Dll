@@ -1,4 +1,4 @@
-﻿namespace CDC_Dll.Core;
+﻿namespace DeviceService.Core;
 public class Class1
 {
 

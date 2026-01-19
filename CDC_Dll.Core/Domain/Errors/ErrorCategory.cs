@@ -1,6 +1,13 @@
-namespace ENTER_NAMESPACE;
+namespace DeviceService.Core.Domain.Errors;
 
-public class ErrorCategory
+public enum ErrorCategory : byte
 {
+    Unknown = 0,
+    Transport = 1,
+    Protocol = 2,
+    Timeout = 3,
+    Device = 4,
+    Configuration = 5,
+    Internal = 6
 
 }
