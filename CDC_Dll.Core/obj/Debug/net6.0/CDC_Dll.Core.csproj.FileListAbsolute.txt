@@ -3,3 +3,9 @@ D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.Generated
 D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.AssemblyInfoInputs.cache
 D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.AssemblyInfo.cs
 D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.csproj.CoreCompileInputs.cache
+D:\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.csproj.AssemblyReference.cache
+D:\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.AssemblyInfoInputs.cache
+D:\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.AssemblyInfo.cs
+D:\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.csproj.CoreCompileInputs.cache
+D:\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.sourcelink.json

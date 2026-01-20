@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "zUxPRPEhKi1b+lXFs6v/DY7xTMPQ91LPgVLLhSqWiCmSl25m4uBcaWnon17KV5m+9lRS7hMEBKuq6+VkEnZ7fw==",
+  "dgSpecHash": "t9eVAnsuj08=",
   "success": true,
-  "projectFilePath": "D:\\APPLICATION CODE\\CDC_Dll\\CDC_Dll.Core\\CDC_Dll.Core.csproj",
+  "projectFilePath": "D:\\CDC_Dll\\CDC_Dll.Core\\CDC_Dll.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.4\\microsoft.extensions.logging.abstractions.6.0.4.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\rjcp.core.environment\\0.3.0\\rjcp.core.environment.0.3.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\rjcp.core.syscompat\\0.2.0\\rjcp.core.syscompat.0.2.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\rjcp.diagnostics.trace\\0.2.1\\rjcp.diagnostics.trace.0.2.1.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\rjcp.io.buffer\\0.2.2\\rjcp.io.buffer.0.2.2.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\rjcp.io.device\\0.8.3\\rjcp.io.device.0.8.3.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\rjcp.serialportstream\\3.0.4\\rjcp.serialportstream.3.0.4.nupkg.sha512"
+    "C:\\Users\\xuank\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.4\\microsoft.extensions.logging.abstractions.6.0.4.nupkg.sha512",
+    "C:\\Users\\xuank\\.nuget\\packages\\rjcp.core.environment\\0.3.0\\rjcp.core.environment.0.3.0.nupkg.sha512",
+    "C:\\Users\\xuank\\.nuget\\packages\\rjcp.core.syscompat\\0.2.0\\rjcp.core.syscompat.0.2.0.nupkg.sha512",
+    "C:\\Users\\xuank\\.nuget\\packages\\rjcp.diagnostics.trace\\0.2.1\\rjcp.diagnostics.trace.0.2.1.nupkg.sha512",
+    "C:\\Users\\xuank\\.nuget\\packages\\rjcp.io.buffer\\0.2.2\\rjcp.io.buffer.0.2.2.nupkg.sha512",
+    "C:\\Users\\xuank\\.nuget\\packages\\rjcp.io.device\\0.8.3\\rjcp.io.device.0.8.3.nupkg.sha512",
+    "C:\\Users\\xuank\\.nuget\\packages\\rjcp.serialportstream\\3.0.4\\rjcp.serialportstream.3.0.4.nupkg.sha512"
   ],
   "logs": []
 }

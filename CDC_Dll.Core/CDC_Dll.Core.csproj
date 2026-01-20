@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <LangVersion>lastest</LangVersion> 
+    <LangVersion>10.0</LangVersion> 
   </PropertyGroup>
 <ItemGroup>
     <PackageReference Include="RJCP.SerialPortStream" Version="3.0.4" />

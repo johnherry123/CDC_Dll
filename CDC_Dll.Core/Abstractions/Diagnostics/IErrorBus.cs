@@ -1,6 +1,6 @@
 using DeviceService.Core.Domain.Errors;
 
-namespace DeviceService.Core.Abstractions.Diagnostics
+namespace CDC_Dll.Core.Abstractions.Diagnostics
 {
     public interface IErrorBus
     {
