@@ -1,19 +1,21 @@
-using CDC.Dll.Core.Domain.Contracts;
-using DeviceService.Core.Abstractions.Diagnostics;
-using DeviceService.Core.Abstractions.Protocol;
-using DeviceService.Core.Application.Commands;
-using DeviceService.Core.Application.Errors;
-using DeviceService.Core.Application.Telemetries;
-using DeviceService.Core.Domain.Contracts;
-using DeviceService.Core.Domain.Errors;
-using DeviceService.Core.Domain.Models;
-using DeviceService.Core.Domain.Protocol;
-using DeviceService.Core.Infrastructure.Exceptions;
-using DeviceService.Core.Services;
+using CDC_Dll.Core.Domain.Contracts;
+using CDC_Dll.Core.Abstractions.Diagnostics;
+
+using CDC_Dll.Core.Abstractions.Protocol;
+using CDC_Dll.Core.Application.Commands;
+using CDC_Dll.Core.Application.Errors;
+using CDC_Dll.Core.Application.Telemetries;
+using CDC_Dll.Core.Domain.Contracts;
+using CDC_Dll.Core.Domain.Errors;
+using CDC_Dll.Core.Domain.Models;
+using CDC_Dll.Core.Domain.Protocol;
+using CDC_Dll.Core.Infrastructure.Exceptions;
+using CDC_Dll.Core.Services;
+using CDC_DLL.Core.Abstractions.Protocol;
 
 namespace CDC_Dll.Core.Application.Services;
 
-public sealed class DeviceService : IDeviceService
+public sealed class DeviceServiceCore : IDeviceService
 {
     private readonly IProtocolClient _Client;
     private readonly IErrorBus _errorBus;
@@ -21,7 +23,7 @@ public sealed class DeviceService : IDeviceService
     public ConnectionState State { get; private set; } = ConnectionState.Disconnected;
     public event Action<ConnectionState>? StateChanged;
     public event Action<Telemetry>? TelemetryUpdated;
-    public DeviceService(IProtocolClient client, IErrorBus errorBus)
+    public DeviceServiceCore(IProtocolClient client, IErrorBus errorBus)
     {
         _Client = client;
         _errorBus = errorBus;
@@ -205,7 +207,7 @@ public sealed class DeviceService : IDeviceService
     private static Frame BuildCommandFrame(ReadOnlyMemory<byte> commandPayload)
     {
         var header = new FrameHeader(
-            Version: ProtocolVersion.V1,
+            Version: ProtocolVersion.Current,
             Type: MsgType.Command,
             MsgId: 0,
             Seq: 0,

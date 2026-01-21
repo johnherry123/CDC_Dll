@@ -1,5 +1,5 @@
-using DeviceService.Core.Domain.Diagnostics;
-namespace DeviceService.Core.Domain.Errors;
+using CDC_Dll.Core.Domain.Diagnostics;
+namespace CDC_Dll.Core.Domain.Errors;
 
 public sealed class ErrorInfo
 {

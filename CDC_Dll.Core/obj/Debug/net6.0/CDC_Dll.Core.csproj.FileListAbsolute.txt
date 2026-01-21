@@ -1,11 +1,18 @@
-D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.csproj.AssemblyReference.cache
-D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.GeneratedMSBuildEditorConfig.editorconfig
-D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.AssemblyInfoInputs.cache
-D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.AssemblyInfo.cs
-D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.csproj.CoreCompileInputs.cache
 D:\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.csproj.AssemblyReference.cache
 D:\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.GeneratedMSBuildEditorConfig.editorconfig
 D:\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.AssemblyInfoInputs.cache
 D:\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.AssemblyInfo.cs
 D:\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.csproj.CoreCompileInputs.cache
 D:\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.sourcelink.json
+D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\bin\Debug\net6.0\CDC_Dll.Core.deps.json
+D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\bin\Debug\net6.0\CDC_Dll.Core.dll
+D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\bin\Debug\net6.0\CDC_Dll.Core.pdb
+D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.csproj.AssemblyReference.cache
+D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.AssemblyInfoInputs.cache
+D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.AssemblyInfo.cs
+D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.csproj.CoreCompileInputs.cache
+D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.dll
+D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\refint\CDC_Dll.Core.dll
+D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\CDC_Dll.Core.pdb
+D:\APPLICATION CODE\CDC_Dll\CDC_Dll.Core\obj\Debug\net6.0\ref\CDC_Dll.Core.dll

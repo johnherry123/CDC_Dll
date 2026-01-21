@@ -1,7 +1,9 @@
-using DeviceService.Core.Abstractions.Diagnostics;
-using DeviceService.Core.Domain.Errors;
 
-namespace DeviceService.Core.Infrastructure.Diagnostics;
+
+using CDC_Dll.Core.Abstractions.Diagnostics;
+using CDC_Dll.Core.Domain.Errors;
+
+namespace CDC_Dll.Core.Infrastructure.Diagnostics;
 
 public sealed class InMemoryErrorBus : IErrorBus
 {

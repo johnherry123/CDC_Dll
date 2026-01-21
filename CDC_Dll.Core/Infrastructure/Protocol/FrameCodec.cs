@@ -1,34 +1,41 @@
-using DeviceService.Core.Abstractions.Protocol;
-using DeviceService.Core.Domain.Errors;
-using DeviceService.Core.Domain.Protocol;
-using DeviceService.Core.Infrastructure.Exceptions;
 using System.Buffers.Binary;
-using System.Runtime.Intrinsics.Arm;
+using CDC_Dll.Core.Abstractions.Protocol;
+using CDC_Dll.Core.Domain.Errors;
+using CDC_Dll.Core.Domain.Protocol;
+using CDC_Dll.Core.Infrastructure.Exceptions;
 
 namespace CDC_Dll.Core.Infrastructure.Protocol;
 
-public sealed class FrameCodec: IFrameCodec
+public sealed class FrameCodec : IFrameCodec
 {
-    private enum State{SeekSof1, SeekSof2, Readheader, ReadPayload, ReadCrc}
+    private enum State { SeekSof1, SeekSof2, ReadHeader, ReadPayload, ReadCrc }
+
     private State _state = State.SeekSof1;
-    private readonly byte[] _headerBuf = new byte[ProtocolConstants.HeaderLength];
-    private int _headerPos;
-    private byte[]? _payloadBuf;
-    private int _payloadPos;
-    private readonly byte[] _crcBuf = new byte[2];
-    private int _crcPos;
-    private FrameHeader _currentHeader;
+
+    private readonly byte[] _header = new byte[ProtocolConstants.HeaderLength];
+    private int _hPos;
+
+    private byte[] _payload = Array.Empty<byte>();
+    private int _pPos;
+
+    private readonly byte[] _crc = new byte[2];
+    private int _cPos;
+
+    private FrameHeader _curHeader;
+
     public void Reset()
     {
         _state = State.SeekSof1;
-        _headerPos = 0;
-        _payloadBuf = null;
-        _payloadPos = 0;
-        _crcPos = 0;
+        _hPos = 0;
+        _payload = Array.Empty<byte>();
+        _pPos = 0;
+        _cPos = 0;
     }
+
     public IEnumerable<Frame> Feed(ReadOnlySpan<byte> data)
     {
-        var frames = new List<Frame>();
+       
+        List<Frame>? frames = null;
 
         for (int i = 0; i < data.Length; i++)
         {
@@ -43,8 +50,13 @@ public sealed class FrameCodec: IFrameCodec
                 case State.SeekSof2:
                     if (b == ProtocolConstants.Sof2)
                     {
-                        _state = State.Readheader;
-                        _headerPos = 0;
+                        _state = State.ReadHeader;
+                        _hPos = 0;
+                    }
+                    else if (b == ProtocolConstants.Sof1)
+                    {
+                        
+                        _state = State.SeekSof2;
                     }
                     else
                     {
@@ -52,80 +64,78 @@ public sealed class FrameCodec: IFrameCodec
                     }
                     break;
 
-                case State.Readheader:
-                    _headerBuf[_headerPos++] = b;
-                    if (_headerPos == ProtocolConstants.HeaderLength)
+                case State.ReadHeader:
+                    _header[_hPos++] = b;
+                    if (_hPos == ProtocolConstants.HeaderLength)
                     {
-                        _currentHeader = ParseHeader(_headerBuf);
+                        _curHeader = ParseHeader(_header);
 
-                        if (_currentHeader.PayloadLength > ProtocolConstants.MaxPayloadLength)
+                        if (_curHeader.PayloadLength > ProtocolConstants.MaxPayloadLength)
                         {
-                            Reset();
+                          
+                            SoftResetAfterError(lastByte: b);
                             throw new ProtocolException(ErrorCode.ProtocolFrameInvalid, "PayloadLength too large.");
                         }
 
-                        _payloadBuf = _currentHeader.PayloadLength == 0
-                            ? Array.Empty<byte>()
-                            : new byte[_currentHeader.PayloadLength];
+                        _payload = _curHeader.PayloadLength == 0 ? Array.Empty<byte>() : new byte[_curHeader.PayloadLength];
+                        _pPos = 0;
+                        _cPos = 0;
 
-                        _payloadPos = 0;
-                        _crcPos = 0;
-
-                        _state = (_currentHeader.PayloadLength == 0) ? State.ReadCrc : State.ReadPayload;
+                        _state = _curHeader.PayloadLength == 0 ? State.ReadCrc : State.ReadPayload;
                     }
                     break;
 
                 case State.ReadPayload:
-                    _payloadBuf![_payloadPos++] = b;
-                    if (_payloadPos == _payloadBuf!.Length)
+                    _payload[_pPos++] = b;
+                    if (_pPos == _payload.Length)
                     {
                         _state = State.ReadCrc;
-                        _crcPos = 0;
+                        _cPos = 0;
                     }
                     break;
 
                 case State.ReadCrc:
-                    _crcBuf[_crcPos++] = b;
-                    if (_crcPos == 2)
+                    _crc[_cPos++] = b;
+                    if (_cPos == 2)
                     {
-                
-                        var expected = BinaryPrimitives.ReadUInt16LittleEndian(_crcBuf);
+                        var expected = BinaryPrimitives.ReadUInt16LittleEndian(_crc);
 
-                        Span<byte> check = stackalloc byte[ProtocolConstants.HeaderLength + (_payloadBuf?.Length ?? 0)];
-                        _headerBuf.CopyTo(check);
-                        if (_payloadBuf is { Length: > 0 })
-                            _payloadBuf.AsSpan().CopyTo(check.Slice(ProtocolConstants.HeaderLength));
+                 
+                        Span<byte> check = stackalloc byte[ProtocolConstants.HeaderLength + _payload.Length];
+                        _header.CopyTo(check);
+                        if (_payload.Length > 0)
+                            _payload.AsSpan().CopyTo(check.Slice(ProtocolConstants.HeaderLength));
 
                         var actual = CRC16.Compute(check);
 
                         if (actual != expected)
                         {
-                            Reset();
+                            SoftResetAfterError(lastByte: b);
                             throw new ProtocolException(ErrorCode.ProtocolCRCFailed,
-                                $"CRC mismatch. expected={expected:X4}, actual={actual:X4}");
+                                $"CRC mismatch expected={expected:X4} actual={actual:X4}");
                         }
 
-                        var payload = (_payloadBuf is null || _payloadBuf.Length == 0)
-                            ? ReadOnlyMemory<byte>.Empty
-                            : new ReadOnlyMemory<byte>(_payloadBuf);
+                        frames ??= new List<Frame>(2);
+                        var payloadMem = _payload.Length == 0 ? ReadOnlyMemory<byte>.Empty : new ReadOnlyMemory<byte>(_payload);
+                        frames.Add(new Frame(_curHeader, payloadMem));
 
-                        frames.Add(new Frame(_currentHeader, payload));
-
+                        // chuẩn bị frame tiếp theo
                         Reset();
                     }
                     break;
             }
         }
 
-        return frames;
+        return frames ?? Enumerable.Empty<Frame>();
     }
 
     public byte[] Encode(Frame frame)
-    { 
-        var len = 2 + ProtocolConstants.HeaderLength + frame.Payload.Length + 2;
-        var buf = new byte[len];
-        int p = 0;
+    {
+       
+        var total = 2 + ProtocolConstants.HeaderLength + frame.Payload.Length + 2;
+        var buf = new byte[total];
 
+        int p = 0;
         buf[p++] = ProtocolConstants.Sof1;
         buf[p++] = ProtocolConstants.Sof2;
 
@@ -138,7 +148,6 @@ public sealed class FrameCodec: IFrameCodec
             p += frame.Payload.Length;
         }
 
-       
         var crcSpan = buf.AsSpan(2, ProtocolConstants.HeaderLength + frame.Payload.Length);
         var crc = CRC16.Compute(crcSpan);
         BinaryPrimitives.WriteUInt16LittleEndian(buf.AsSpan(p, 2), crc);
@@ -146,15 +155,21 @@ public sealed class FrameCodec: IFrameCodec
         return buf;
     }
 
+    private void SoftResetAfterError(byte lastByte)
+    {
+        
+        Reset();
+        if (lastByte == ProtocolConstants.Sof1)
+            _state = State.SeekSof2;
+    }
+
     private static FrameHeader ParseHeader(ReadOnlySpan<byte> header)
     {
-      
         var ver = header[0];
         var type = (MsgType)header[1];
         var msgId = BinaryPrimitives.ReadUInt16LittleEndian(header.Slice(2, 2));
         var seq = BinaryPrimitives.ReadUInt16LittleEndian(header.Slice(4, 2));
         var payloadLen = BinaryPrimitives.ReadUInt16LittleEndian(header.Slice(6, 2));
-
         return new FrameHeader(ver, type, msgId, seq, payloadLen);
     }
 

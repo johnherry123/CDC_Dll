@@ -1,8 +1,8 @@
 using System.Runtime.CompilerServices;
-using DeviceService.Core.Domain.Diagnostics;
-using DeviceService.Core.Domain.Errors;
+using CDC_Dll.Core.Domain.Diagnostics;
+using CDC_Dll.Core.Domain.Errors;
 
-namespace DeviceService.Core.Application.Errors;
+namespace CDC_Dll.Core.Application.Errors;
 
 
 public static class ResultGuard

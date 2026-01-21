@@ -1,11 +1,12 @@
 
+
+
 using CDC_Dll.Core.Abstractions.Transport;
-using DeviceService.Core.Abstractions.Transport;
-using DeviceService.Core.Domain.Errors;
-using DeviceService.Core.Infrastructure.Exceptions;
+using CDC_Dll.Core.Domain.Errors;
+using CDC_Dll.Core.Infrastructure.Exceptions;
 using RJCP.IO.Ports;
 
-namespace CDC_DLL.Infrastructure.Transport;
+namespace CDC_Dll.Core.Infrastructure.Transport;
 
 public sealed class SerialCdcTransport : ITransport
 {

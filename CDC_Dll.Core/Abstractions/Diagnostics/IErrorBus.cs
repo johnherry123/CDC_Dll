@@ -1,4 +1,4 @@
-using DeviceService.Core.Domain.Errors;
+using CDC_Dll.Core.Domain.Errors;
 
 namespace CDC_Dll.Core.Abstractions.Diagnostics
 {

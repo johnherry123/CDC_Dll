@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CDC_Dll\\CDC_Dll.Core\\CDC_Dll.Core.csproj": {}
+    "D:\\APPLICATION CODE\\CDC_Dll\\CDC_Dll.Core\\CDC_Dll.Core.csproj": {}
   },
   "projects": {
-    "D:\\CDC_Dll\\CDC_Dll.Core\\CDC_Dll.Core.csproj": {
+    "D:\\APPLICATION CODE\\CDC_Dll\\CDC_Dll.Core\\CDC_Dll.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CDC_Dll\\CDC_Dll.Core\\CDC_Dll.Core.csproj",
+        "projectUniqueName": "D:\\APPLICATION CODE\\CDC_Dll\\CDC_Dll.Core\\CDC_Dll.Core.csproj",
         "projectName": "CDC_Dll.Core",
-        "projectPath": "D:\\CDC_Dll\\CDC_Dll.Core\\CDC_Dll.Core.csproj",
-        "packagesPath": "C:\\Users\\xuank\\.nuget\\packages\\",
-        "outputPath": "D:\\CDC_Dll\\CDC_Dll.Core\\obj\\",
+        "projectPath": "D:\\APPLICATION CODE\\CDC_Dll\\CDC_Dll.Core\\CDC_Dll.Core.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\APPLICATION CODE\\CDC_Dll\\CDC_Dll.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\DotNet\\New folder (3)\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\xuank\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,13 +32,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.100"
+        }
       },
       "frameworks": {
         "net6.0": {
@@ -71,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.428\\RuntimeIdentifierGraph.json"
         }
       }
     }

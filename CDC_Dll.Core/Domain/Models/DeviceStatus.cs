@@ -1,6 +1,6 @@
 using System.Net.NetworkInformation;
 
-namespace DeviceService.Core.Domain.Models;
+namespace CDC_Dll.Core.Domain.Models;
 
 public sealed class DeviceStatus
 {

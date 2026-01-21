@@ -1,6 +1,6 @@
-using DeviceService.Core.Abstractions.Protocol;
+using CDC_Dll.Core.Abstractions.Protocol;
 
-namespace DeviceService.Core.Domain.Protocol;
+namespace CDC_Dll.Core.Domain.Protocol;
 
 public sealed class Frame
 {

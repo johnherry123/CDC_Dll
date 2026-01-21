@@ -1,11 +1,11 @@
 
-using CDC.Dll.Core.Domain.Contracts;
-using DeviceService.Core.Domain.Contracts;
-using DeviceService.Core.Domain.Errors;
-using DeviceService.Core.Domain.Models;
+
+using CDC_Dll.Core.Domain.Contracts;
+using CDC_Dll.Core.Domain.Errors;
+using CDC_Dll.Core.Domain.Models;
 
 
-namespace DeviceService.Core.Services;
+namespace CDC_Dll.Core.Services;
 public interface IDeviceService
 {
     ConnectionState State { get; }

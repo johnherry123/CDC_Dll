@@ -1,4 +1,4 @@
-namespace DeviceService.Core.Domain.Protocol;
+namespace CDC_Dll.Core.Domain.Protocol;
 public enum ResponeStatus : byte
 {
     Ok = 0x00,

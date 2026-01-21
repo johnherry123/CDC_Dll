@@ -1,7 +1,7 @@
 using System.Xml.Serialization;
-using DeviceService.Core.Domain.Models;
+using CDC_Dll.Core.Domain.Models;
 
-namespace DeviceService.Core.Application.Telemetries;
+namespace CDC_Dll.Core.Application.Telemetries;
 
 public class TelemetryCache
 {

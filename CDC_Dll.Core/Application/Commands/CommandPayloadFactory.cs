@@ -1,6 +1,6 @@
-using DeviceService.Core.Domain.Protocol;
+using CDC_Dll.Core.Domain.Protocol;
 
-namespace DeviceService.Core.Application.Commands;
+namespace CDC_Dll.Core.Application.Commands;
 
 public static class CommandPayloadFactory
 {

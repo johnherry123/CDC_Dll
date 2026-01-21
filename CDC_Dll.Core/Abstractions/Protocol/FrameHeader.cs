@@ -1,4 +1,4 @@
-namespace DeviceService.Core.Abstractions.Protocol;
+namespace CDC_Dll.Core.Abstractions.Protocol;
 public readonly record struct FrameHeader
 (
     byte Version,

@@ -1,6 +1,6 @@
 using System.Buffers.Binary;
 
-namespace DeviceService.Core.Application.Commands;
+namespace CDC_Dll.Core.Application.Commands;
 
 public ref struct PayloadWriter
 {

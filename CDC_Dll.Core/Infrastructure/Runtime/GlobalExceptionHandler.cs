@@ -1,7 +1,7 @@
 
 
-using DeviceService.Core.Abstractions.Diagnostics;
-using DeviceService.Core.Application.Errors;
+using CDC_Dll.Core.Abstractions.Diagnostics;
+using CDC_Dll.Core.Application.Errors;
 
 
 namespace CDC_Dll.Core.Infrastructure.Runtime;

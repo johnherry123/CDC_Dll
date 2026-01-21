@@ -1,6 +1,6 @@
-using DeviceService.Core.Domain.Protocol;
+using CDC_Dll.Core.Domain.Protocol;
 
-namespace DeviceService.Core.Abstractions.Protocol;
+namespace CDC_Dll.Core.Abstractions.Protocol;
 
 public interface IFrameCodec
 {

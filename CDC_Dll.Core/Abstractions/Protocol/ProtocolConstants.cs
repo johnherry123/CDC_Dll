@@ -1,4 +1,4 @@
-namespace DeviceService.Core.Abstractions.Protocol;
+namespace CDC_Dll.Core.Abstractions.Protocol;
 public static class ProtocolConstants
 {
     public const byte Sof1 = 0xA5;

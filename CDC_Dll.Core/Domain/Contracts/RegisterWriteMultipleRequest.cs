@@ -1,6 +1,6 @@
-using DeviceService.Core.Domain.Contracts;
+using CDC_Dll.Core.Domain.Contracts;
 
-namespace CDC.Dll.Core.Domain.Contracts;
+namespace CDC_Dll.Core.Domain.Contracts;
 public sealed class RegisRegisterWriteMultipleRequest
 {
     public byte UnitId{get;init; } =1;

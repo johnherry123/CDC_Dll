@@ -1,4 +1,4 @@
-namespace DeviceService.Core.Domain.Protocol;
+namespace CDC_Dll.Core.Domain.Protocol;
 
 public static class ProtocolFrameLayout
 {

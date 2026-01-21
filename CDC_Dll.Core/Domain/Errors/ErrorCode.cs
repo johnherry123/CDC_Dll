@@ -1,4 +1,4 @@
-namespace DeviceService.Core.Domain.Errors;
+namespace CDC_Dll.Core.Domain.Errors;
 public enum ErrorCode : ushort
 {
     None = 0,

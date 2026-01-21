@@ -1,8 +1,8 @@
-namespace DeviceService.Core.Abstractions.Protocol;
+namespace CDC_Dll.Core.Abstractions.Protocol;
 
 public readonly record struct LinkMetricsSnapshot
 (
-    long RxByte,
+     long RxByte,
     long TxByte,
     long RxFrame,
     long TxFrame,
@@ -13,5 +13,6 @@ public readonly record struct LinkMetricsSnapshot
     DateTime LastRxUtc,
     DateTime LastTxUtc,
     double RxBytesPerSec,
-    double TxBytesPerSec
+    double TxBytesPerSec,
+    double RxFramesPerSec
 );

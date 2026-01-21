@@ -1,6 +1,6 @@
-using DeviceService.Core.Domain.Errors;
+using CDC_Dll.Core.Domain.Errors;
 
-namespace DeviceService.Core.Infrastructure.Exceptions;
+namespace CDC_Dll.Core.Infrastructure.Exceptions;
 
 public class TransportException: Exception
 {

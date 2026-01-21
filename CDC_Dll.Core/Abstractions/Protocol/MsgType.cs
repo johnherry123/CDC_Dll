@@ -1,4 +1,4 @@
-namespace DeviceService.Core.Abstractions.Protocol;
+namespace CDC_Dll.Core.Abstractions.Protocol;
 
 public enum MsgType : byte
 {

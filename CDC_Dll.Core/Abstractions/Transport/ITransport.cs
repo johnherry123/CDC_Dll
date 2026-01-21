@@ -1,4 +1,4 @@
-namespace DeviceService.Core.Abstractions.Transport;
+namespace CDC_Dll.Core.Abstractions.Transport;
 
 public interface ITransport: IAsyncDisposable
 {

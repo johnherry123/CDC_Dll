@@ -1,4 +1,4 @@
-namespace DeviceService.Core.Domain.Diagnostics;
+namespace CDC_Dll.Core.Domain.Diagnostics;
 
 public class OperationContext
 {

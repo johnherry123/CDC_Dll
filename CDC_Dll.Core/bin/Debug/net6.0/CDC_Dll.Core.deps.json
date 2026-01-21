@@ -1,0 +1,155 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CDC_Dll.Core/1.0.0": {
+        "dependencies": {
+          "RJCP.SerialPortStream": "3.0.4"
+        },
+        "runtime": {
+          "CDC_Dll.Core.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.4": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1823.26907"
+          }
+        }
+      },
+      "RJCP.Core.Environment/0.3.0": {
+        "runtime": {
+          "lib/net6.0/RJCP.Core.Environment.dll": {
+            "assemblyVersion": "0.3.0.0",
+            "fileVersion": "0.3.0.0"
+          }
+        },
+        "resources": {
+          "lib/net6.0/de/RJCP.Core.Environment.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "RJCP.Core.SysCompat/0.2.0": {
+        "runtime": {
+          "lib/net6.0/RJCP.Core.SysCompat.dll": {
+            "assemblyVersion": "0.2.0.0",
+            "fileVersion": "0.2.0.0"
+          }
+        }
+      },
+      "RJCP.Diagnostics.Trace/0.2.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.4",
+          "RJCP.Core.SysCompat": "0.2.0"
+        },
+        "runtime": {
+          "lib/net6.0/RJCP.Diagnostics.Trace.dll": {
+            "assemblyVersion": "0.2.1.0",
+            "fileVersion": "0.2.1.0"
+          }
+        }
+      },
+      "RJCP.IO.Buffer/0.2.2": {
+        "dependencies": {
+          "RJCP.Core.SysCompat": "0.2.0"
+        },
+        "runtime": {
+          "lib/net6.0/RJCP.IO.Buffer.dll": {
+            "assemblyVersion": "0.2.2.0",
+            "fileVersion": "0.2.2.0"
+          }
+        }
+      },
+      "RJCP.IO.Device/0.8.3": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.4",
+          "RJCP.Core.Environment": "0.3.0",
+          "RJCP.Diagnostics.Trace": "0.2.1"
+        },
+        "runtime": {
+          "lib/net6.0/RJCP.IO.Device.dll": {
+            "assemblyVersion": "0.8.3.0",
+            "fileVersion": "0.8.3.0"
+          }
+        }
+      },
+      "RJCP.SerialPortStream/3.0.4": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.4",
+          "RJCP.Core.SysCompat": "0.2.0",
+          "RJCP.Diagnostics.Trace": "0.2.1",
+          "RJCP.IO.Buffer": "0.2.2",
+          "RJCP.IO.Device": "0.8.3"
+        },
+        "runtime": {
+          "lib/net6.0/RJCP.SerialPortStream.dll": {
+            "assemblyVersion": "3.0.4.0",
+            "fileVersion": "3.0.4.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CDC_Dll.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Logging.Abstractions/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K14wYgwOfKVELrUh5eBqlC8Wvo9vvhS3ZhIvcswV2uS/ubkTRPSQsN557EZiYUSSoZNxizG+alN4wjtdyLdcyw==",
+      "path": "microsoft.extensions.logging.abstractions/6.0.4",
+      "hashPath": "microsoft.extensions.logging.abstractions.6.0.4.nupkg.sha512"
+    },
+    "RJCP.Core.Environment/0.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LTNnaHJ6bcA698eRVnMwDVlWEv0q3FUKxQ18Dxv5N0ivfJVwM8Bf+QTBsBPoFrowXqvSJ3Of4ZufPoHPauF7FA==",
+      "path": "rjcp.core.environment/0.3.0",
+      "hashPath": "rjcp.core.environment.0.3.0.nupkg.sha512"
+    },
+    "RJCP.Core.SysCompat/0.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FlMmlbneu3IOtN7oebY3InUbahsMcBfY7Q1+LBxBRJqJKWwT0+ALmshKpqd4ebzB2jItXF5Sgk7OWH47AiSAYQ==",
+      "path": "rjcp.core.syscompat/0.2.0",
+      "hashPath": "rjcp.core.syscompat.0.2.0.nupkg.sha512"
+    },
+    "RJCP.Diagnostics.Trace/0.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g7572Ox0uNwXQ6LILKSsP/euzZKFmkCIA98qmCrwuchAMr8YbXZd03BGct5j9XCItrY4wcHNRh503DV4uJjt7Q==",
+      "path": "rjcp.diagnostics.trace/0.2.1",
+      "hashPath": "rjcp.diagnostics.trace.0.2.1.nupkg.sha512"
+    },
+    "RJCP.IO.Buffer/0.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/B9a00opGj1ud5x9+SJucv/pVA6n036MmUp2FMFB3QDkCF7ciaF1aGAnb7+ILMA6nVsqyNXsmSAFT+L5p3fttw==",
+      "path": "rjcp.io.buffer/0.2.2",
+      "hashPath": "rjcp.io.buffer.0.2.2.nupkg.sha512"
+    },
+    "RJCP.IO.Device/0.8.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qPrOt00w8m2vOANlr71NPDMDE/qCJE16EIXM3q1hpWyDVTW03Lx4DHYKryMX/F4o/Gpdb8u0JldApzOU4aw12A==",
+      "path": "rjcp.io.device/0.8.3",
+      "hashPath": "rjcp.io.device.0.8.3.nupkg.sha512"
+    },
+    "RJCP.SerialPortStream/3.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gorh4IJUs2R7aysVx2L3zqbG8E0faMLtkfkmeM2+SuGa6k6PyXHM/IrrxnNQ7glC3ImSD10toxUkNFPD96f/cw==",
+      "path": "rjcp.serialportstream/3.0.4",
+      "hashPath": "rjcp.serialportstream.3.0.4.nupkg.sha512"
+    }
+  }
+}

@@ -1,6 +1,8 @@
-using System.Data;
 
-namespace DeviceService.Core.Abstractions.Protocol;
+
+using CDC_Dll.Core.Domain.Models;
+
+namespace CDC_Dll.Core.Abstractions.Protocol;
 
 public readonly record struct ConnectionHealthSnapshot
 (

@@ -1,8 +1,8 @@
-using DeviceService.Core.Application.Commands;
-using DeviceService.Core.Domain.Models;
-using DeviceService.Core.Domain.Protocol;
+using CDC_Dll.Core.Application.Commands;
+using CDC_Dll.Core.Domain.Models;
+using CDC_Dll.Core.Domain.Protocol;
 
-namespace DeviceService.Core.Application.Telemetries;
+namespace CDC_Dll.Core.Application.Telemetries;
 
 public static class TelemetryMapper
 {

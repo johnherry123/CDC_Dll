@@ -1,5 +1,7 @@
-namespace DeviceService.Core.Abstractions.Protocol;
+namespace CDC_DLL.Core.Abstractions.Protocol;
+
 public static class ProtocolVersion
 {
-    public const byte V1 = 0x01;
+  
+    public const byte Current = 1;
 }

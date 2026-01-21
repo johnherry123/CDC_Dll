@@ -1,4 +1,4 @@
-namespace DeviceService.Core.Domain.Contracts;
+namespace CDC_Dll.Core.Domain.Contracts;
 
 public sealed class RegisterReadResponse
 {
