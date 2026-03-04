@@ -1,0 +1,12 @@
+D:\APPLICATION CODE\CDC_DLL\McuCdc.Modbus\McuCdc.Modbus\bin\Debug\net6.0\McuCdc.Modbus.deps.json
+D:\APPLICATION CODE\CDC_DLL\McuCdc.Modbus\McuCdc.Modbus\bin\Debug\net6.0\McuCdc.Modbus.dll
+D:\APPLICATION CODE\CDC_DLL\McuCdc.Modbus\McuCdc.Modbus\bin\Debug\net6.0\McuCdc.Modbus.pdb
+D:\APPLICATION CODE\CDC_DLL\McuCdc.Modbus\McuCdc.Modbus\obj\Debug\net6.0\McuCdc.Modbus.csproj.AssemblyReference.cache
+D:\APPLICATION CODE\CDC_DLL\McuCdc.Modbus\McuCdc.Modbus\obj\Debug\net6.0\McuCdc.Modbus.GeneratedMSBuildEditorConfig.editorconfig
+D:\APPLICATION CODE\CDC_DLL\McuCdc.Modbus\McuCdc.Modbus\obj\Debug\net6.0\McuCdc.Modbus.AssemblyInfoInputs.cache
+D:\APPLICATION CODE\CDC_DLL\McuCdc.Modbus\McuCdc.Modbus\obj\Debug\net6.0\McuCdc.Modbus.AssemblyInfo.cs
+D:\APPLICATION CODE\CDC_DLL\McuCdc.Modbus\McuCdc.Modbus\obj\Debug\net6.0\McuCdc.Modbus.csproj.CoreCompileInputs.cache
+D:\APPLICATION CODE\CDC_DLL\McuCdc.Modbus\McuCdc.Modbus\obj\Debug\net6.0\McuCdc.Modbus.dll
+D:\APPLICATION CODE\CDC_DLL\McuCdc.Modbus\McuCdc.Modbus\obj\Debug\net6.0\refint\McuCdc.Modbus.dll
+D:\APPLICATION CODE\CDC_DLL\McuCdc.Modbus\McuCdc.Modbus\obj\Debug\net6.0\McuCdc.Modbus.pdb
+D:\APPLICATION CODE\CDC_DLL\McuCdc.Modbus\McuCdc.Modbus\obj\Debug\net6.0\ref\McuCdc.Modbus.dll

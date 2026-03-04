@@ -1,0 +1,709 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\viewmodels\\motorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\viewmodels\\motorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\comsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\comsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\viewmodels\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\viewmodels\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\logic\\camera_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\logic\\camera_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\measurement_mc_app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\measurement_mc_app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\database\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\database\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\database\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\database\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\database\\logs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\database\\logs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\database\\pointparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\database\\pointparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\database\\visionparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\database\\visionparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\viewmodels\\traycellvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\viewmodels\\traycellvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\iopoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\iopoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\logic\\converters\\booleannegationconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\logic\\converters\\booleannegationconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\modbusaddresses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\modbusaddresses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\tcpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\tcpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\referenceparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\referenceparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\views\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\views\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\viewmodels\\trayboardvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\viewmodels\\trayboardvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\views\\visionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\views\\visionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\modelspec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\modelspec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\views\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\views\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\viewmodels\\enumequalsconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\viewmodels\\enumequalsconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\mcustatussnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\mcustatussnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\mcustate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\mcustate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\service\\mcumodbusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\service\\mcumodbusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\views\\motorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\views\\motorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\views\\settingsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\views\\settingsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\logic\\converters\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\logic\\converters\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\mcumodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\mcumodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\views\\motorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\views\\motorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\mcuread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\mcuread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\mcusession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\mcusession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\models\\mcucomhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\models\\mcucomhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|d:\\application code\\measurement_mc\\measurement_mc_app\\measurement_mc_app\\service\\imcumodbusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C9D75A7-1944-4D7E-AD0A-16CB5807279A}|Measurement_MC_App\\Measurement_MC_App.csproj|solutionrelative:measurement_mc_app\\service\\imcumodbusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ComSettings.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\ComSettings.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\ComSettings.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\ComSettings.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\ComSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T08:13:56.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Model.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\Database\\Model.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\Database\\Model.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\Database\\Model.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\Database\\Model.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T06:46:16.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MotorViewModel.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\ViewModels\\MotorViewModel.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\ViewModels\\MotorViewModel.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\ViewModels\\MotorViewModel.cs",
+              "RelativeToolTip": "Measurement_MC_App\\ViewModels\\MotorViewModel.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAowJEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T02:21:53.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Camera_BLL.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Logic\\Camera_BLL.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Logic\\Camera_BLL.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Logic\\Camera_BLL.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Logic\\Camera_BLL.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAAALsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T09:38:50.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "VisionParam.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\Database\\VisionParam.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\Database\\VisionParam.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\Database\\VisionParam.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\Database\\VisionParam.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T06:46:15.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ReferenceParams.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\ReferenceParams.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\ReferenceParams.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\ReferenceParams.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\ReferenceParams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T06:45:41.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TcpSettings.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\TcpSettings.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\TcpSettings.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\TcpSettings.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\TcpSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T06:45:40.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "Measurement_MC_App\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwG8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T05:45:43.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\appsettings.json",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\appsettings.json",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\appsettings.json",
+              "RelativeToolTip": "Measurement_MC_App\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-09T09:15:58.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\App.xaml.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\App.xaml.cs",
+              "RelativeToolTip": "Measurement_MC_App\\App.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA9wBwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T07:56:33.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "Measurement_MC_App\\ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T03:30:18.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PointParam.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\Database\\PointParam.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\Database\\PointParam.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\Database\\PointParam.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\Database\\PointParam.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T08:27:21.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Logs.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\Database\\Logs.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\Database\\Logs.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\Database\\Logs.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\Database\\Logs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T08:42:36.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SettingsViewModel.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\ViewModels\\SettingsViewModel.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\ViewModels\\SettingsViewModel.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\ViewModels\\SettingsViewModel.cs",
+              "RelativeToolTip": "Measurement_MC_App\\ViewModels\\SettingsViewModel.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowB4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T10:03:32.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IoPoint.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\IoPoint.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\IoPoint.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\IoPoint.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\IoPoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T08:48:54.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\Database\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\Database\\AppDbContext.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\Database\\AppDbContext.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\Database\\AppDbContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwB0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T09:12:30.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Measurement_MC_App",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Measurement_MC_App.csproj",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Measurement_MC_App.csproj",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Measurement_MC_App.csproj",
+              "RelativeToolTip": "Measurement_MC_App\\Measurement_MC_App.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-09T09:16:04.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Connector.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\Database\\Connector.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\Database\\Connector.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\Database\\Connector.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\Database\\Connector.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wCcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T06:45:36.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\App.xaml",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\App.xaml",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\App.xaml",
+              "RelativeToolTip": "Measurement_MC_App\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-08T07:56:30.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TrayCellVM.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\ViewModels\\TrayCellVM.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\ViewModels\\TrayCellVM.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\ViewModels\\TrayCellVM.cs",
+              "RelativeToolTip": "Measurement_MC_App\\ViewModels\\TrayCellVM.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwBoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T09:22:19.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BooleanNegationConverter.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Logic\\Converters\\BooleanNegationConverter.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Logic\\Converters\\BooleanNegationConverter.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Logic\\Converters\\BooleanNegationConverter.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Logic\\Converters\\BooleanNegationConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T08:26:05.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "McuComHub.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\McuComHub.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\McuComHub.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\McuComHub.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\McuComHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T03:29:12.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ModbusAddresses.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\ModbusAddresses.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\ModbusAddresses.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\ModbusAddresses.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\ModbusAddresses.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAwwGMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T03:23:39.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "VisionView.xaml",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\VisionView.xaml",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Views\\VisionView.xaml",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\VisionView.xaml",
+              "RelativeToolTip": "Measurement_MC_App\\Views\\VisionView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-08T11:36:49.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MainView.xaml",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\MainView.xaml",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Views\\MainView.xaml",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\MainView.xaml",
+              "RelativeToolTip": "Measurement_MC_App\\Views\\MainView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-08T08:53:09.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TrayBoardVM.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\ViewModels\\TrayBoardVM.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\ViewModels\\TrayBoardVM.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\ViewModels\\TrayBoardVM.cs",
+              "RelativeToolTip": "Measurement_MC_App\\ViewModels\\TrayBoardVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T09:26:00.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "McuState.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\McuState.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\McuState.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\McuState.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\McuState.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T07:36:14.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ModelSpec.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\ModelSpec.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\ModelSpec.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\ModelSpec.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\ModelSpec.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T09:03:33.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MainView.xaml.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\MainView.xaml.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Views\\MainView.xaml.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\MainView.xaml.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Views\\MainView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T08:58:23.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Views\\MainWindow.xaml",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "Measurement_MC_App\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-08T07:56:53.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Views\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAE0AAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T07:56:57.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MotorView.xaml",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\MotorView.xaml",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Views\\MotorView.xaml",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\MotorView.xaml",
+              "RelativeToolTip": "Measurement_MC_App\\Views\\MotorView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-06T06:17:06.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "McuModbusService.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Service\\McuModbusService.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Service\\McuModbusService.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Service\\McuModbusService.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Service\\McuModbusService.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAmwOUAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T03:20:13.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "McuSession.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\McuSession.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\McuSession.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\McuSession.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\McuSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T03:29:17.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "McuRead.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\McuRead.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\McuRead.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\McuRead.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\McuRead.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA5wAsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T03:29:18.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EnumEqualsConverter.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\ViewModels\\EnumEqualsConverter.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\ViewModels\\EnumEqualsConverter.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\ViewModels\\EnumEqualsConverter.cs",
+              "RelativeToolTip": "Measurement_MC_App\\ViewModels\\EnumEqualsConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T05:45:45.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "McuModels.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\McuModels.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\McuModels.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\McuModels.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\McuModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T03:30:10.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "McuStatusSnapshot.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\McuStatusSnapshot.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Models\\McuStatusSnapshot.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Models\\McuStatusSnapshot.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Models\\McuStatusSnapshot.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T03:29:46.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SettingsView.xaml",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\SettingsView.xaml",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Views\\SettingsView.xaml",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\SettingsView.xaml",
+              "RelativeToolTip": "Measurement_MC_App\\Views\\SettingsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-08T07:29:19.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "BoolToVisibilityConverter.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Logic\\Converters\\BoolToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Logic\\Converters\\BoolToVisibilityConverter.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Logic\\Converters\\BoolToVisibilityConverter.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Logic\\Converters\\BoolToVisibilityConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T05:45:41.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "MotorView.xaml.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\MotorView.xaml.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Views\\MotorView.xaml.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Views\\MotorView.xaml.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Views\\MotorView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T02:21:39.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IMcuModbusService.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Service\\IMcuModbusService.cs",
+              "RelativeDocumentMoniker": "Measurement_MC_App\\Service\\IMcuModbusService.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\Measurement_MC\\Measurement_MC_App\\Measurement_MC_App\\Service\\IMcuModbusService.cs",
+              "RelativeToolTip": "Measurement_MC_App\\Service\\IMcuModbusService.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAA8wFIAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T03:19:51.418Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

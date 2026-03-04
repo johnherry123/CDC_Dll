@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resource\LogoMCNEX.ico</ApplicationIcon>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Resource\LogoMCNEX.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helps\" />
+    <Folder Include="Entity\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="MySqlConnector" Version="2.5.0" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.11.0.20250507" />
+    <PackageReference Include="RJCP.SerialPortStream" Version="3.0.4" />
+    <PackageReference Include="SharpVectors.Wpf" Version="1.8.5" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+  
+    <PackageReference Include="OpenCvSharp4" Version="4.11.0.20250507" />
+    <PackageReference Include="OpenCvSharp4.Extensions" Version="4.11.0.20250507" />
+    <PackageReference Include="System.IO.Ports" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Basler.Pylon">
+      <HintPath>C:\Program Files\Basler\pylon\Development\Assemblies\Basler.Pylon\x64\Basler.Pylon.dll</HintPath>
+    </Reference>
+    <Reference Include="McuCdc.Modbus">
+      <HintPath>..\..\..\CDC_Dll\CDC_Dll\McuCdc.Modbus.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

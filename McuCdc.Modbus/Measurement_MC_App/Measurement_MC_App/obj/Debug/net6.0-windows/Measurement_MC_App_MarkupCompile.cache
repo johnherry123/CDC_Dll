@@ -1,0 +1,20 @@
+﻿Measurement_MC_App
+
+
+winexe
+C#
+.cs
+D:\APPLICATION CODE\Measurement_MC\Measurement_MC_App\Measurement_MC_App\obj\Debug\net6.0-windows\
+Measurement_MC_App
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+D:\APPLICATION CODE\Measurement_MC\Measurement_MC_App\Measurement_MC_App\App.xaml
+9-1409313504
+1683083998
+59-1814994664
+2462092881966
+Views\BaseStyles.xaml;Views\DashView.xaml;Views\MainView.xaml;Views\MainWindow.xaml;Views\MotorView.xaml;Views\SettingsView.xaml;Views\Theme\Dark.xaml;Views\Theme\Light.xaml;Views\VisionView.xaml;
+
+False
+

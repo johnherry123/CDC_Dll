@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36915.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McuCdc.Modbus", "McuCdc.Modbus\McuCdc.Modbus.csproj", "{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6863624-E43F-48C7-8EAF-7AF64F371D61}
+	EndGlobalSection
+EndGlobal

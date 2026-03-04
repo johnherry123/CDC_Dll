@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="BackBrush" Color="#F4F6FB"/>
+    <SolidColorBrush x:Key="SurfaceBrush" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="Surface2Brush" Color="#EEF2F8"/>
+    <SolidColorBrush x:Key="CanvasBrush" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="BorderBrush2" Color="#D6DCEB"/>
+
+    <SolidColorBrush x:Key="TextBrush" Color="#0F172A"/>
+    <SolidColorBrush x:Key="Text2Brush" Color="#64748B"/>
+    <SolidColorBrush x:Key="AccentBrush" Color="#2563EB"/>
+    <SolidColorBrush x:Key="AccentSoftBrush" Color="#DCEBFF"/>
+
+    <SolidColorBrush x:Key="GoodBrush" Color="#16A34A"/>
+    <SolidColorBrush x:Key="GoodSoftBrush" Color="#D8F5E3"/>
+    <SolidColorBrush x:Key="BadBrush" Color="#DC2626"/>
+    <SolidColorBrush x:Key="BadSoftBrush" Color="#FFE2E2"/>
+    <SolidColorBrush x:Key="WarnBrush" Color="#D97706"/>
+    <SolidColorBrush x:Key="WarnSoftBrush" Color="#FFEAC9"/>
+    <SolidColorBrush x:Key="InputBrush" Color="#FFFFFF"/>
+
+    <SolidColorBrush x:Key="ShadowBrush" Color="#000000" Opacity="0.10"/>
+</ResourceDictionary>

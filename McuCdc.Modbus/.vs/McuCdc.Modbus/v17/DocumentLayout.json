@@ -1,0 +1,408 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\transport\\serialportstreamtransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\transport\\serialportstreamtransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\client\\clientoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\client\\clientoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\client\\requestworkitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\client\\requestworkitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\client\\modbuscdcclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\client\\modbuscdcclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\client\\framelease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\client\\framelease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\client\\inflight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\client\\inflight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\client\\addressingmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\client\\addressingmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\transport\\iserialtransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\transport\\iserialtransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\spooling\\spoolreplayworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\spooling\\spoolreplayworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\spooling\\framespoolfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\spooling\\framespoolfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\spooling\\spooloptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\spooling\\spooloptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\protocol\\modbusrtuextractorpooled.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\protocol\\modbusrtuextractorpooled.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\protocol\\modbusrturequestbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\protocol\\modbusrturequestbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\protocol\\modbusresponsematchers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\protocol\\modbusresponsematchers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\protocol\\iresponsematcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\protocol\\iresponsematcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\protocol\\modbusrequestspec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\protocol\\modbusrequestspec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\protocol\\modbusframeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\protocol\\modbusframeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\protocol\\modbuscrc16.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\protocol\\modbuscrc16.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\internal\\byteringbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\internal\\byteringbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\internal\\pooledbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\internal\\pooledbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\diagnostics\\taskguard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\diagnostics\\taskguard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\diagnostics\\globalexceptionhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\diagnostics\\globalexceptionhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\diagnostics\\exceptionbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\diagnostics\\exceptionbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|d:\\application code\\cdc_dll\\mcucdc.modbus\\mcucdc.modbus\\diagnostics\\iexceptionsink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4868A042-A2DF-493C-9F0D-C763F9C0BEAF}|McuCdc.Modbus\\McuCdc.Modbus.csproj|solutionrelative:mcucdc.modbus\\diagnostics\\iexceptionsink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ISerialTransport.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Transport\\ISerialTransport.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Transport\\ISerialTransport.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Transport\\ISerialTransport.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Transport\\ISerialTransport.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA5wBQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:39:06.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SerialPortStreamTransport.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Transport\\SerialPortStreamTransport.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Transport\\SerialPortStreamTransport.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Transport\\SerialPortStreamTransport.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Transport\\SerialPortStreamTransport.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAowC8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:39:15.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientOptions.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Client\\ClientOptions.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Client\\ClientOptions.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Client\\ClientOptions.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Client\\ClientOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:35:06.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddressingMode.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Client\\AddressingMode.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Client\\AddressingMode.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Client\\AddressingMode.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Client\\AddressingMode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:34:47.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrameLease.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Client\\FrameLease.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Client\\FrameLease.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Client\\FrameLease.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Client\\FrameLease.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:35:18.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Inflight.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Client\\Inflight.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Client\\Inflight.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Client\\Inflight.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Client\\Inflight.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:35:28.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RequestWorkItem.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Client\\RequestWorkItem.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Client\\RequestWorkItem.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Client\\RequestWorkItem.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Client\\RequestWorkItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:35:44.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ModbusCdcClient.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Client\\ModbusCdcClient.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Client\\ModbusCdcClient.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Client\\ModbusCdcClient.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Client\\ModbusCdcClient.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAMUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:35:53.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SpoolReplayWorker.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Spooling\\SpoolReplayWorker.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Spooling\\SpoolReplayWorker.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Spooling\\SpoolReplayWorker.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Spooling\\SpoolReplayWorker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:38:58.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrameSpoolFile.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Spooling\\FrameSpoolFile.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Spooling\\FrameSpoolFile.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Spooling\\FrameSpoolFile.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Spooling\\FrameSpoolFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:38:50.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SpoolOptions.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Spooling\\SpoolOptions.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Spooling\\SpoolOptions.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Spooling\\SpoolOptions.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Spooling\\SpoolOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:38:43.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ModbusRtuExtractorPooled.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Protocol\\ModbusRtuExtractorPooled.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Protocol\\ModbusRtuExtractorPooled.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Protocol\\ModbusRtuExtractorPooled.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Protocol\\ModbusRtuExtractorPooled.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:38:35.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ModbusRtuRequestBuilder.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Protocol\\ModbusRtuRequestBuilder.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Protocol\\ModbusRtuRequestBuilder.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Protocol\\ModbusRtuRequestBuilder.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Protocol\\ModbusRtuRequestBuilder.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwv1kAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:38:26.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ModbusResponseMatchers.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Protocol\\ModbusResponseMatchers.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Protocol\\ModbusResponseMatchers.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Protocol\\ModbusResponseMatchers.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Protocol\\ModbusResponseMatchers.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwBAAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:38:18.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IResponseMatcher.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Protocol\\IResponseMatcher.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Protocol\\IResponseMatcher.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Protocol\\IResponseMatcher.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Protocol\\IResponseMatcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:38:10.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ModbusRequestSpec.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Protocol\\ModbusRequestSpec.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Protocol\\ModbusRequestSpec.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Protocol\\ModbusRequestSpec.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Protocol\\ModbusRequestSpec.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:38:01.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ModbusFrameView.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Protocol\\ModbusFrameView.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Protocol\\ModbusFrameView.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Protocol\\ModbusFrameView.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Protocol\\ModbusFrameView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:37:54.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ModbusCrc16.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Protocol\\ModbusCrc16.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Protocol\\ModbusCrc16.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Protocol\\ModbusCrc16.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Protocol\\ModbusCrc16.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwBkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:37:46.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ByteRingBuffer.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Internal\\ByteRingBuffer.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Internal\\ByteRingBuffer.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Internal\\ByteRingBuffer.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Internal\\ByteRingBuffer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:37:37.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PooledBuffer.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Internal\\PooledBuffer.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Internal\\PooledBuffer.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Internal\\PooledBuffer.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Internal\\PooledBuffer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:37:30.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TaskGuard.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Diagnostics\\TaskGuard.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Diagnostics\\TaskGuard.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Diagnostics\\TaskGuard.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Diagnostics\\TaskGuard.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwBcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:37:22.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GlobalExceptionHandlers.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Diagnostics\\GlobalExceptionHandlers.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Diagnostics\\GlobalExceptionHandlers.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Diagnostics\\GlobalExceptionHandlers.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Diagnostics\\GlobalExceptionHandlers.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:37:12.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ExceptionBus.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Diagnostics\\ExceptionBus.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Diagnostics\\ExceptionBus.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Diagnostics\\ExceptionBus.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Diagnostics\\ExceptionBus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:37:03.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IExceptionSink.cs",
+              "DocumentMoniker": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Diagnostics\\IExceptionSink.cs",
+              "RelativeDocumentMoniker": "McuCdc.Modbus\\Diagnostics\\IExceptionSink.cs",
+              "ToolTip": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\Diagnostics\\IExceptionSink.cs",
+              "RelativeToolTip": "McuCdc.Modbus\\Diagnostics\\IExceptionSink.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:36:55.458Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

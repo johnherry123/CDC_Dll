@@ -1,0 +1,893 @@
+﻿<UserControl x:Class="Measurement_MC_App.Views.MotorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:Measurement_MC_App.ViewModels"
+             xmlns:conv="clr-namespace:Measurement_MC_App.Logic.Converters"
+             Background="Transparent"
+             SnapsToDevicePixels="True"
+             UseLayoutRounding="True">
+
+    <UserControl.DataContext>
+        <vm:MotorViewModel/>
+    </UserControl.DataContext>
+
+    <UserControl.Resources>
+        <conv:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+        <conv:InverseBoolConverter x:Key="InverseBoolConverter"/>
+
+        <!-- ================= Typography ================= -->
+        <Style x:Key="H1" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <Style x:Key="H2" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <Style x:Key="T2" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{DynamicResource Text2Brush}"/>
+            <Setter Property="FontSize" Value="10.5"/>
+        </Style>
+
+        <!-- ================= Cards ================= -->
+        <Style x:Key="Card" TargetType="Border">
+            <Setter Property="CornerRadius" Value="18"/>
+            <Setter Property="Background" Value="{DynamicResource SurfaceBrush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush2}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="ClipToBounds" Value="True"/>
+        </Style>
+
+        <Style x:Key="SubCard" TargetType="Border">
+            <Setter Property="CornerRadius" Value="14"/>
+            <Setter Property="Background" Value="{DynamicResource Surface2Brush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush2}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="ClipToBounds" Value="True"/>
+        </Style>
+        <Style x:Key="ComboField" TargetType="ComboBox">
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="MinWidth" Value="0"/>
+            <Setter Property="Padding" Value="12,0"/>
+            <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
+            <Setter Property="Background" Value="{DynamicResource Surface2Brush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush2}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="FontSize" Value="12.5"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <Border x:Name="Bd"
+                             CornerRadius="12"
+                             Background="{TemplateBinding Background}"
+                             BorderBrush="{TemplateBinding BorderBrush}"
+                             BorderThickness="{TemplateBinding BorderThickness}"/>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="40"/>
+                                </Grid.ColumnDefinitions>
+
+                                <ContentPresenter Margin="{TemplateBinding Padding}"
+                                           VerticalAlignment="Center"
+                                           Content="{TemplateBinding SelectionBoxItem}"
+                                           RecognizesAccessKey="True"
+                                           TextElement.Foreground="{TemplateBinding Foreground}"/>
+
+                                <ToggleButton Grid.Column="1"
+                                       IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                                       Focusable="False"
+                                       Background="Transparent"
+                                       BorderThickness="0"
+                                       Cursor="Hand">
+                                    <Viewbox Width="14" Height="14">
+                                        <Path Data="M7,10 L12,5 L2,5 Z"
+                                       Fill="{DynamicResource Text2Brush}"/>
+                                    </Viewbox>
+                                </ToggleButton>
+                            </Grid>
+
+                            <Popup IsOpen="{TemplateBinding IsDropDownOpen}"
+                            AllowsTransparency="True"
+                            Placement="Bottom"
+                            Focusable="False"
+                            PopupAnimation="Fade"
+                            PlacementTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}">
+                                <Border Margin="0,6,0,0"
+                                 CornerRadius="12"
+                                 Background="{DynamicResource SurfaceBrush}"
+                                 BorderBrush="{DynamicResource BorderBrush2}"
+                                 BorderThickness="1"
+                                 Width="{Binding ActualWidth, RelativeSource={RelativeSource TemplatedParent}}">
+                                    <ScrollViewer MaxHeight="280"
+                                           Padding="6"
+                                           HorizontalScrollBarVisibility="Disabled"
+                                           VerticalScrollBarVisibility="Auto">
+                                        <ItemsPresenter/>
+                                    </ScrollViewer>
+                                </Border>
+                            </Popup>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="Bd" Property="Opacity" Value="0.55"/>
+                            </Trigger>
+                            <Trigger Property="IsDropDownOpen" Value="True">
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!-- ================= Inputs ================= -->
+        <Style x:Key="TextField" TargetType="TextBox">
+            <Setter Property="Height" Value="34"/>
+            <Setter Property="Padding" Value="12,0"/>
+            <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
+            <Setter Property="Background" Value="{DynamicResource InputBrush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush2}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border x:Name="Bd" CornerRadius="12"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="Bd" Property="Opacity" Value="0.55"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- ================= Buttons ================= -->
+        <Style x:Key="BtnBase" TargetType="Button">
+            <Setter Property="Height" Value="34"/>
+            <Setter Property="Padding" Value="14,0"/>
+            <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
+            <Setter Property="Background" Value="{DynamicResource Surface2Brush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush2}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="11.5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Bd" CornerRadius="12"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Bd" Property="Opacity" Value="0.88"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="Bd" Property="Opacity" Value="0.55"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="BtnPrimary" TargetType="Button" BasedOn="{StaticResource BtnBase}">
+            <Setter Property="Background" Value="{DynamicResource AccentSoftBrush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+        </Style>
+
+        <Style x:Key="BtnDanger" TargetType="Button" BasedOn="{StaticResource BtnBase}">
+            <Setter Property="Background" Value="#18FF4D4D"/>
+            <Setter Property="BorderBrush" Value="#44FF4D4D"/>
+        </Style>
+
+        <!-- Hold Buttons (Jog-like) -->
+        <Style x:Key="HoldBtn" TargetType="Button" BasedOn="{StaticResource BtnBase}">
+            <Setter Property="Height" Value="44"/>
+            <Setter Property="FontSize" Value="12.5"/>
+        </Style>
+
+        <!-- Seg (small pill) -->
+        <Style x:Key="SegRadio" TargetType="RadioButton">
+            <Setter Property="Height" Value="26"/>
+            <Setter Property="MinWidth" Value="62"/>
+            <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
+            <Setter Property="Background" Value="{DynamicResource Surface2Brush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush2}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="10.5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Border x:Name="Bd" CornerRadius="10"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="Bd" Property="Background" Value="{DynamicResource AccentSoftBrush}"/>
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- IO tile -->
+        <DataTemplate x:Key="IoTileMiniTemplate">
+            <Border CornerRadius="10"
+            Background="{DynamicResource Surface2Brush}"
+            BorderBrush="{DynamicResource BorderBrush2}"
+            BorderThickness="1"
+            Padding="8,6"
+            Margin="3">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="14"/>
+                    </Grid.ColumnDefinitions>
+
+                
+                    <TextBlock Text="{Binding Name}"
+                       Foreground="{DynamicResource TextBrush}"
+                       FontWeight="SemiBold"
+                       FontSize="10"
+                       VerticalAlignment="Center"
+                       TextTrimming="CharacterEllipsis"/>
+
+                  
+                    <Ellipse Grid.Column="1"
+                     Width="9" Height="9"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Right">
+                        <Ellipse.Style>
+                            <Style TargetType="Ellipse">
+                                <Setter Property="Fill" Value="{DynamicResource BorderBrush2}"/>
+                                <Setter Property="Opacity" Value="0.8"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsOn}" Value="True">
+                                        <Setter Property="Fill" Value="{DynamicResource AccentBrush}"/>
+                                        <Setter Property="Opacity" Value="1"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Ellipse.Style>
+                    </Ellipse>
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid Margin="18">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2.0*"/>
+            <ColumnDefinition Width="16"/>
+            <ColumnDefinition Width="1.0*"/>
+        </Grid.ColumnDefinitions>
+
+ 
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <!-- TouchMap -->
+                <RowDefinition Height="2.8*"/>
+                <RowDefinition Height="12"/>
+                <!-- Tray Points -->
+                <RowDefinition Height="1.3*"/>
+                <RowDefinition Height="12"/>
+                <!-- IO small  -->
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Touch Map -->
+            <Border Grid.Row="0" Style="{StaticResource Card}" Padding="12">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="8"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource H1}" Text="Touch Map"/>
+                            <TextBlock Style="{StaticResource T2}" Text="Tap to set target (X:0..550 | Y:0..280)" Margin="0,2,0,0"/>
+                        </StackPanel>
+
+                        <Border Grid.Column="1"
+                                CornerRadius="10"
+                                Padding="10,4"
+                                Background="{DynamicResource Surface2Brush}"
+                                BorderBrush="{DynamicResource BorderBrush2}"
+                                BorderThickness="1"
+                                VerticalAlignment="Center">
+                            <TextBlock Style="{StaticResource T2}"
+                                       FontWeight="SemiBold"
+                                       Text="{Binding StatusText}"
+                                       TextTrimming="CharacterEllipsis"
+                                       MaxWidth="170"/>
+                        </Border>
+                    </Grid>
+
+                    <Border Grid.Row="2"
+                            CornerRadius="16"
+                            Background="{DynamicResource CanvasBrush}"
+                            BorderBrush="{DynamicResource BorderBrush2}"
+                            BorderThickness="1"
+                            ClipToBounds="True">
+                        <Grid>
+                            <Canvas x:Name="MapCanvas"
+                                    Background="#01000000"
+                                    SizeChanged="MapCanvas_SizeChanged"
+                                    MouseLeftButtonDown="MapCanvas_MouseLeftButtonDown">
+                                <Border Width="18" Height="18" CornerRadius="6"
+                                        Background="{DynamicResource AccentBrush}"
+                                        BorderBrush="#AA000000" BorderThickness="2"
+                                        Canvas.Left="{Binding MarkerLeft}"
+                                        Canvas.Top="{Binding MarkerTop}"
+                                        IsHitTestVisible="False"/>
+                            </Canvas>
+
+                            <!-- small overlay -->
+                            <StackPanel Orientation="Horizontal"
+                                        VerticalAlignment="Top"
+                                        HorizontalAlignment="Left"
+                                        Margin="10,10,0,0">
+                                <Border CornerRadius="10"
+                                        Background="#24000000"
+                                        BorderBrush="#22FFFFFF"
+                                        BorderThickness="1"
+                                        Padding="10,4">
+                                    <TextBlock Foreground="#EFFFFFFF"
+                                               FontSize="10.5"
+                                               FontWeight="SemiBold"
+                                               Text="{Binding CurrentX, StringFormat = F2}"/>
+                                </Border>
+                                <Border CornerRadius="10"
+                                        Background="#24000000"
+                                        BorderBrush="#22FFFFFF"
+                                        BorderThickness="1"
+                                        Padding="10,4"
+                                        Margin="8,0,0,0">
+                                    <TextBlock Foreground="#EFFFFFFF"
+                                               FontSize="10.5"
+                                               FontWeight="SemiBold"
+                                               Text="{Binding CurrentY, StringFormat=F2}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <!-- Tray Points -->
+            <Border Grid.Row="2" Style="{StaticResource Card}" Padding="12">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource H1}" Text="Tray Points"/>
+                            <TextBlock Style="{StaticResource T2}" Text="Set P1/P2/P3 from current, then save" Margin="0,2,0,0"/>
+                        </StackPanel>
+
+                        <!-- FIX: SelectedTrayIndex is 1..6 => use SelectedValue -->
+                        <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                            <TextBlock Style="{StaticResource T2}" Text="Tray" Margin="0,0,8,0" VerticalAlignment="Center"/>
+                            <ComboBox Width="140" Height="34"
+                                      Style="{StaticResource ComboField}"
+                                      Background="{DynamicResource Surface2Brush}"
+                                      Foreground="{DynamicResource TextBrush}"
+                                      BorderBrush="{DynamicResource BorderBrush2}"
+                                      BorderThickness="1"
+                                      SelectedValuePath="Tag"
+                                      SelectedValue="{Binding SelectedTrayIndex, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                <ComboBoxItem Content="1" Tag="1"/>
+                                <ComboBoxItem Content="2" Tag="2"/>
+                                <ComboBoxItem Content="3" Tag="3"/>
+                                <ComboBoxItem Content="4" Tag="4"/>
+                                <ComboBoxItem Content="5" Tag="5"/>
+                                <ComboBoxItem Content="6" Tag="6"/>
+                            </ComboBox>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Style="{StaticResource SubCard}" Padding="10">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="4"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="8"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Style="{StaticResource H2}" Text="P1"/>
+                                <TextBlock Grid.Row="2" Style="{StaticResource T2}" Text="{Binding SelectedTray.P1}"/>
+                                <Button Grid.Row="4" Style="{StaticResource BtnPrimary}" Height="32"
+                                        Content="Set" Command="{Binding SetP1FromCurrentCommand}"/>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="2" Style="{StaticResource SubCard}" Padding="10">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="4"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="8"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Style="{StaticResource H2}" Text="P2"/>
+                                <TextBlock Grid.Row="2" Style="{StaticResource T2}" Text="{Binding SelectedTray.P2}"/>
+                                <Button Grid.Row="4" Style="{StaticResource BtnPrimary}" Height="32"
+                                        Content="Set" Command="{Binding SetP2FromCurrentCommand}"/>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="4" Style="{StaticResource SubCard}" Padding="10">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="4"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="8"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Style="{StaticResource H2}" Text="P3"/>
+                                <TextBlock Grid.Row="2" Style="{StaticResource T2}" Text="{Binding SelectedTray.P3}"/>
+                                <Button Grid.Row="4" Style="{StaticResource BtnPrimary}" Height="32"
+                                        Content="Set" Command="{Binding SetP3FromCurrentCommand}"/>
+                            </Grid>
+                        </Border>
+                    </Grid>
+
+                    <Grid Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="160"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="110"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="0" Style="{StaticResource BtnPrimary}" Height="34"
+                                Content="SAVE TRAY"
+                                Command="{Binding SaveTrayCommand}"/>
+
+                        <TextBlock Grid.Column="2" Style="{StaticResource T2}"
+                                   Text="{Binding StatusText}"
+                                   VerticalAlignment="Center"
+                                   TextTrimming="CharacterEllipsis"/>
+
+                        <Button Grid.Column="4" Style="{StaticResource BtnDanger}" Height="34"
+                                Content="CLEAR"
+                                Command="{Binding ClearTrayCommand}"/>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <!-- IO small -->
+            <Border Grid.Row="4" Style="{StaticResource Card}" Padding="12">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="8"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Style="{StaticResource H1}" Text="IO"/>
+
+                        <Border Grid.Column="1"
+                                CornerRadius="12"
+                                Background="{DynamicResource Surface2Brush}"
+                                BorderBrush="{DynamicResource BorderBrush2}"
+                                BorderThickness="1"
+                                Padding="4">
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton GroupName="IOTab"
+                                             Style="{StaticResource SegRadio}"
+                                             Content="OUT"
+                                             Width="62"
+                                             IsChecked="{Binding IsIoOutput, Mode=OneWay}"
+                                             Command="{Binding ShowIoOutputCommand}"/>
+                                <RadioButton GroupName="IOTab"
+                                             Style="{StaticResource SegRadio}"
+                                             Content="IN"
+                                             Width="62"
+                                             Margin="6,0,0,0"
+                                             IsChecked="{Binding IsIoOutput, Converter={StaticResource InverseBoolConverter}, Mode=OneWay}"
+                                             Command="{Binding ShowIoInputCommand}"/>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+
+                    <Border Grid.Row="2" Style="{StaticResource SubCard}" Padding="8">
+                        <ItemsControl ItemTemplate="{StaticResource IoTileMiniTemplate}">
+                            <ItemsControl.Style>
+                                <Style TargetType="ItemsControl">
+                                    <Setter Property="ItemsSource" Value="{Binding Outputs}"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsIoOutput}" Value="False">
+                                            <Setter Property="ItemsSource" Value="{Binding Inputs}"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ItemsControl.Style>
+
+                            <!-- small: 3x4 -->
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <UniformGrid Columns="9" Rows="2"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+                    </Border>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <!-- ================= RIGHT COLUMN ================= -->
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="12"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="12"/>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Motion -->
+            <Border Grid.Row="0" Style="{StaticResource Card}" Padding="14">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Style="{StaticResource H1}" Text="Motion Control"/>
+
+                    <!-- Current -->
+                    <Border Grid.Row="2" Style="{StaticResource SubCard}" Padding="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="110"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <TextBlock Text="Current" Style="{StaticResource T2}" FontWeight="SemiBold" Margin="0,0,0,6" TextAlignment="Center"/>
+                                <TextBlock Text="{Binding CurrentX, StringFormat='X = {0:0.##}'}" Foreground="{DynamicResource TextBrush}" FontSize="14" FontWeight="SemiBold" TextAlignment="Center" Margin="0,0,0,2"/>
+                                <TextBlock Text="{Binding CurrentY, StringFormat='Y = {0:0.##}'}" Foreground="{DynamicResource TextBrush}" FontSize="14" FontWeight="SemiBold" TextAlignment="Center" Margin="0,0,0,2"/>
+                                <TextBlock Text="{Binding CurrentZ, StringFormat='Z = {0:0.##}'}" Foreground="{DynamicResource TextBrush}" FontSize="14" FontWeight="SemiBold" TextAlignment="Center"/>
+                            </StackPanel>
+
+                            <Button Grid.Column="2"
+                                    Style="{StaticResource BtnPrimary}"
+                                    Width="110" Height="34"
+                                    Content="HOME"
+                                    Command="{Binding HomeCommand}"
+                                    VerticalAlignment="Center"/>
+                        </Grid>
+                    </Border>
+
+                    <!-- Mode -->
+                    <Border Grid.Row="4" Style="{StaticResource SubCard}" Padding="8">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <RadioButton Grid.Column="0" GroupName="MotorMode"
+                                         Style="{StaticResource SegRadio}"
+                                         Content="Manual"
+                                         IsChecked="{Binding IsManual, Mode=OneWay}"
+                                         Command="{Binding SetModeManualCommand}"/>
+
+                            <RadioButton Grid.Column="2" GroupName="MotorMode"
+                                         Style="{StaticResource SegRadio}"
+                                         Content="Tap"
+                                         IsChecked="{Binding IsTap, Mode=OneWay}"
+                                         Command="{Binding SetModeTapCommand}"/>
+                        </Grid>
+                    </Border>
+
+                    <!-- Manual -->
+                    <Border Grid.Row="6" Style="{StaticResource SubCard}" Padding="10"
+                            Visibility="{Binding IsManual, Converter={StaticResource BoolToVisibilityConverter}}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="12"/>
+                                <ColumnDefinition Width="120"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBox Style="{StaticResource TextField}"
+                                     Text="{Binding TargetX, Mode=TwoWay, UpdateSourceTrigger=LostFocus, StringFormat=F2}"/>
+                            <TextBox Grid.Column="2" Style="{StaticResource TextField}"
+                                     Text="{Binding TargetY, Mode=TwoWay, UpdateSourceTrigger=LostFocus, StringFormat=F2}"/>
+                            <TextBox Grid.Column="4" Style="{StaticResource TextField}"
+                                     Text="{Binding TargetZ, Mode=TwoWay, UpdateSourceTrigger=LostFocus, StringFormat=F2}"/>
+
+                            <Button Grid.Column="6" Style="{StaticResource BtnPrimary}"
+                                    Height="34"
+                                    Content="Apply"
+                                    Command="{Binding ApplyManualCommand}"/>
+                        </Grid>
+                    </Border>
+
+                    <!-- Tap/Jog -->
+                    <Border Grid.Row="8" Style="{StaticResource SubCard}" Padding="10"
+                            Visibility="{Binding IsTap, Converter={StaticResource BoolToVisibilityConverter}}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="10"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Style="{StaticResource T2}" Text="Jog (Hold to move)" FontWeight="SemiBold"/>
+
+                            <UniformGrid Grid.Row="2" Columns="2" Rows="3">
+                                <Button Style="{StaticResource HoldBtn}" Content="X-" Tag="X-"
+                                        PreviewMouseLeftButtonDown="TapBtn_Down"
+                                        PreviewMouseLeftButtonUp="TapBtn_Up"
+                                        LostMouseCapture="TapBtn_LostCapture"
+                                        TouchDown="TapBtn_TouchDown"
+                                        TouchUp="TapBtn_TouchUp"
+                                        LostTouchCapture="TapBtn_LostTouchCapture"/>
+
+                                <Button Style="{StaticResource HoldBtn}" Content="X+" Tag="X+"
+                                        PreviewMouseLeftButtonDown="TapBtn_Down"
+                                        PreviewMouseLeftButtonUp="TapBtn_Up"
+                                        LostMouseCapture="TapBtn_LostCapture"
+                                        TouchDown="TapBtn_TouchDown"
+                                        TouchUp="TapBtn_TouchUp"
+                                        LostTouchCapture="TapBtn_LostTouchCapture"/>
+
+                                <Button Style="{StaticResource HoldBtn}" Content="Y-" Tag="Y-"
+                                        PreviewMouseLeftButtonDown="TapBtn_Down"
+                                        PreviewMouseLeftButtonUp="TapBtn_Up"
+                                        LostMouseCapture="TapBtn_LostCapture"
+                                        TouchDown="TapBtn_TouchDown"
+                                        TouchUp="TapBtn_TouchUp"
+                                        LostTouchCapture="TapBtn_LostTouchCapture"/>
+
+                                <Button Style="{StaticResource HoldBtn}" Content="Y+" Tag="Y+"
+                                        PreviewMouseLeftButtonDown="TapBtn_Down"
+                                        PreviewMouseLeftButtonUp="TapBtn_Up"
+                                        LostMouseCapture="TapBtn_LostCapture"
+                                        TouchDown="TapBtn_TouchDown"
+                                        TouchUp="TapBtn_TouchUp"
+                                        LostTouchCapture="TapBtn_LostTouchCapture"/>
+
+                                <Button Style="{StaticResource HoldBtn}" Content="Z-" Tag="Z-"
+                                        PreviewMouseLeftButtonDown="TapBtn_Down"
+                                        PreviewMouseLeftButtonUp="TapBtn_Up"
+                                        LostMouseCapture="TapBtn_LostCapture"
+                                        TouchDown="TapBtn_TouchDown"
+                                        TouchUp="TapBtn_TouchUp"
+                                        LostTouchCapture="TapBtn_LostTouchCapture"/>
+
+                                <Button Style="{StaticResource HoldBtn}" Content="Z+" Tag="Z+"
+                                        PreviewMouseLeftButtonDown="TapBtn_Down"
+                                        PreviewMouseLeftButtonUp="TapBtn_Up"
+                                        LostMouseCapture="TapBtn_LostCapture"
+                                        TouchDown="TapBtn_TouchDown"
+                                        TouchUp="TapBtn_TouchUp"
+                                        LostTouchCapture="TapBtn_LostTouchCapture"/>
+                            </UniformGrid>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <!-- Handler Control (Jog-like hold) -->
+            <Border Grid.Row="2" Style="{StaticResource Card}" Padding="14">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Style="{StaticResource H1}" Text="Handler Control"/>
+
+                    <Border Grid.Row="2" Style="{StaticResource SubCard}" Padding="10">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="10"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Style="{StaticResource T2}" Text="Hold to act" FontWeight="SemiBold"/>
+
+                            <UniformGrid Grid.Row="2" Columns="2" Rows="1">
+                                <Button Style="{StaticResource HoldBtn}" Content="PICK" Tag="PICK"
+                                        PreviewMouseLeftButtonDown="HandlerBtn_Down"
+                                        PreviewMouseLeftButtonUp="HandlerBtn_Up"
+                                        LostMouseCapture="HandlerBtn_LostCapture"
+                                        TouchDown="HandlerBtn_TouchDown"
+                                        TouchUp="HandlerBtn_TouchUp"
+                                        LostTouchCapture="HandlerBtn_LostTouchCapture"/>
+
+                                <Button Style="{StaticResource HoldBtn}" Content="RELEASE" Tag="RELEASE"
+                                        PreviewMouseLeftButtonDown="HandlerBtn_Down"
+                                        PreviewMouseLeftButtonUp="HandlerBtn_Up"
+                                        LostMouseCapture="HandlerBtn_LostCapture"
+                                        TouchDown="HandlerBtn_TouchDown"
+                                        TouchUp="HandlerBtn_TouchUp"
+                                        LostTouchCapture="HandlerBtn_LostTouchCapture"/>
+                            </UniformGrid>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <!-- Camera fixed 300 -->
+            <Border Grid.Row="4" Style="{StaticResource Card}" Padding="12">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource H1}" Text="Camera"/>
+                            <TextBlock Style="{StaticResource T2}" Text="{Binding CameraStatus}" Margin="0,2,0,0"/>
+                        </StackPanel>
+
+                        <Border Grid.Column="1"
+                                CornerRadius="10"
+                                Padding="10,4"
+                                Background="{DynamicResource Surface2Brush}"
+                                BorderBrush="{DynamicResource BorderBrush2}"
+                                BorderThickness="1"
+                                VerticalAlignment="Center">
+                            <TextBlock Style="{StaticResource T2}" FontWeight="SemiBold"
+                                       Text="{Binding CameraStatus}"/>
+                        </Border>
+                    </Grid>
+
+                    <Border Grid.Row="2"
+                            CornerRadius="18"
+                            Background="{DynamicResource Surface2Brush}"
+                            BorderBrush="{DynamicResource BorderBrush2}"
+                            BorderThickness="1"
+                            ClipToBounds="True">
+                        <Grid>
+                            <Image Source="{Binding CameraImage}"
+                                   Stretch="UniformToFill"
+                                   SnapsToDevicePixels="True"
+                                   RenderOptions.BitmapScalingMode="HighQuality"/>
+
+                            <!-- top gradient -->
+                            <Border VerticalAlignment="Top" Height="60">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Color="#AA000000" Offset="0"/>
+                                        <GradientStop Color="#00000000" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                            </Border>
+
+                            <!-- overlay chip -->
+                            <Border CornerRadius="10"
+                                    Background="#24000000"
+                                    BorderBrush="#22FFFFFF"
+                                    BorderThickness="1"
+                                    Padding="10,4"
+                                    VerticalAlignment="Top"
+                                    HorizontalAlignment="Left"
+                                    Margin="12,10,0,0">
+                                <TextBlock Foreground="#EFFFFFFF"
+                                           FontSize="10.5"
+                                           FontWeight="SemiBold"
+                                           Text="{Binding CameraStatus}"/>
+                            </Border>
+
+                            <Button Background="#01000000"
+                                    BorderThickness="0"
+                                    Command="{Binding CameraClickCommand}"
+                                    ToolTip="Click to inspect"/>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

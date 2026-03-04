@@ -1,0 +1,544 @@
+﻿<Window x:Class="Measurement_MC_App.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:conv="clr-namespace:Measurement_MC_App.Logic.Converters"
+        xmlns:vm="clr-namespace:Measurement_MC_App.ViewModels"
+        xmlns:local="clr-namespace:Measurement_MC_App"
+        Title="Measurement MC"
+        Width="1920" Height="1080"
+        MinWidth="1280" MinHeight="720"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        WindowStyle="None"
+        ResizeMode="CanResize"
+        AllowsTransparency="False"
+        SnapsToDevicePixels="True"
+        UseLayoutRounding="True"
+        TextOptions.TextFormattingMode="Display"
+        Background="{DynamicResource BackBrush}">
+
+    <Window.DataContext>
+        <vm:MainWindowViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <conv:InverseBoolConverter x:Key="InverseBoolConverter"/>
+        <CubicEase x:Key="EaseOut" EasingMode="EaseOut"/>
+
+        <!-- ===== Window template ===== -->
+        <Style TargetType="{x:Type Window}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Window}">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{DynamicResource BorderBrush2}"
+                                BorderThickness="1">
+                            <AdornerDecorator>
+                                <ContentPresenter/>
+                            </AdornerDecorator>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- ===== Card ===== -->
+        <Style x:Key="Card" TargetType="Border">
+            <Setter Property="CornerRadius" Value="18"/>
+            <Setter Property="Background" Value="{DynamicResource SurfaceBrush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush2}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="ClipToBounds" Value="True"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="UseLayoutRounding" Value="True"/>
+        </Style>
+
+        <!-- ===== Chip ===== -->
+        <Style x:Key="Chip" TargetType="Border">
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Background" Value="{DynamicResource Surface2Brush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush2}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="ClipToBounds" Value="True"/>
+        </Style>
+
+        <!-- ===== Buttons ===== -->
+        <Style x:Key="Btn" TargetType="Button">
+            <Setter Property="Height" Value="36"/>
+            <Setter Property="Background" Value="{DynamicResource Surface2Brush}"/>
+            <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush2}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="14,8"/>
+            <Setter Property="FontSize" Value="12.5"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Bd"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Bd" Property="Opacity" Value="0.88"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="Bd" Property="Opacity" Value="0.55"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="BtnAccent" TargetType="Button" BasedOn="{StaticResource Btn}">
+            <Setter Property="Background" Value="{DynamicResource AccentBrush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+
+        <!-- ===== Title buttons ===== -->
+        <Style x:Key="TitleBtn" TargetType="Button">
+            <Setter Property="Width" Value="44"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Bd" CornerRadius="10" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Bd" Property="Background" Value="{DynamicResource Surface2Brush}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Bd" Property="Opacity" Value="0.85"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="TitleCloseBtn" TargetType="Button" BasedOn="{StaticResource TitleBtn}">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#33FF3B30"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- ===== Side toggle ===== -->
+        <Style x:Key="SideToggle" TargetType="ToggleButton">
+            <Setter Property="Width" Value="44"/>
+            <Setter Property="Height" Value="44"/>
+            <Setter Property="Background" Value="{DynamicResource Surface2Brush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush2}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Border x:Name="Bd" CornerRadius="14"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- ===== Nav item ===== -->
+        <Style x:Key="NavItemStyle" TargetType="ListBoxItem">
+            <Setter Property="Margin" Value="0,8"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListBoxItem">
+                        <Grid>
+                            <!-- Expanded -->
+                            <Border x:Name="ExpandedBd"
+                                    CornerRadius="16"
+                                    Background="{DynamicResource Surface2Brush}"
+                                    BorderBrush="{DynamicResource BorderBrush2}"
+                                    BorderThickness="1"
+                                    Padding="14,12"
+                                    Visibility="Visible"
+                                    ClipToBounds="True">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="34"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Viewbox Width="18" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Path Data="{Binding Icon}" Fill="{DynamicResource TextBrush}"/>
+                                    </Viewbox>
+
+                                    <TextBlock Grid.Column="1"
+                                               Text="{Binding Title}"
+                                               Margin="12,0,0,0"
+                                               FontSize="13.5"
+                                               FontWeight="SemiBold"
+                                               Foreground="{DynamicResource TextBrush}"
+                                               VerticalAlignment="Center"/>
+                                </Grid>
+                            </Border>
+
+                            <!-- Collapsed -->
+                            <Border x:Name="CollapsedBd"
+                                    Width="48" Height="48"
+                                    CornerRadius="16"
+                                    Background="{DynamicResource Surface2Brush}"
+                                    BorderBrush="{DynamicResource BorderBrush2}"
+                                    BorderThickness="1"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Visibility="Collapsed"
+                                    ClipToBounds="True">
+                                <Viewbox Width="18" Height="18">
+                                    <Path Data="{Binding Icon}" Fill="{DynamicResource TextBrush}"/>
+                                </Viewbox>
+                            </Border>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="ExpandedBd" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+                                <Setter TargetName="CollapsedBd" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+                            </Trigger>
+
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="ExpandedBd" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+                                <Setter TargetName="ExpandedBd" Property="Background" Value="{DynamicResource AccentSoftBrush}"/>
+                                <Setter TargetName="CollapsedBd" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+                                <Setter TargetName="CollapsedBd" Property="Background" Value="{DynamicResource AccentSoftBrush}"/>
+                            </Trigger>
+
+                            <!-- Default collapsed -->
+                            <DataTrigger Binding="{Binding IsChecked, ElementName=NavExpand}" Value="False">
+                                <Setter TargetName="ExpandedBd" Property="Visibility" Value="Collapsed"/>
+                                <Setter TargetName="CollapsedBd" Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- ===== Theme transition overlay (fade) ===== -->
+        <Style x:Key="ThemeFadeOverlay" TargetType="Border">
+            <Setter Property="Background" Value="#FF000000"/>
+            <Setter Property="Opacity" Value="0"/>
+            <Setter Property="IsHitTestVisible" Value="False"/>
+        </Style>
+
+        <!-- ===== Connect Button style (auto changes) ===== -->
+        <Style x:Key="BtnConnect" TargetType="Button" BasedOn="{StaticResource Btn}">
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Padding" Value="12,6"/>
+            <Setter Property="Command" Value="{Binding ToggleConnectionCommand}"/>
+
+            <!-- default: Connect -->
+            <Setter Property="Background" Value="{DynamicResource AccentBrush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Content" Value="Connect"/>
+
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsConnected}" Value="True">
+                    <Setter Property="Background" Value="{DynamicResource Surface2Brush}"/>
+                    <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush2}"/>
+                    <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
+                    <Setter Property="Content" Value="Disconnect"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="138"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- ================= TOP BAR ================= -->
+        <Border Grid.Row="0"
+                Background="{DynamicResource SurfaceBrush}"
+                BorderBrush="{DynamicResource BorderBrush2}"
+                BorderThickness="0,0,0,1">
+            <Grid Margin="16,10" MouseLeftButtonDown="TopBar_MouseLeftButtonDown">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Row 1 -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Left Brand (Logo + Title) -->
+                    <Grid VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="48"/>
+                            <ColumnDefinition Width="12"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="12"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0"
+                                Width="48" Height="48"
+                                CornerRadius="14"
+                                Background="{DynamicResource Surface2Brush}"
+                                BorderBrush="{DynamicResource BorderBrush2}"
+                                BorderThickness="1"
+                                Padding="6">
+                            <Image Stretch="Uniform"
+                                   RenderOptions.BitmapScalingMode="HighQuality"
+                                   Source="/Resource/LogoMCNEX.ico"/>
+                        </Border>
+
+                        <StackPanel Grid.Column="2" Orientation="Vertical" VerticalAlignment="Center">
+                            <TextBlock Text="Measurement MC"
+                                       Foreground="{DynamicResource TextBrush}"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       LineHeight="18"/>
+                            <TextBlock Text="MCNEX Vision Station"
+                                       Foreground="{DynamicResource Text2Brush}"
+                                       FontSize="11"
+                                       Margin="0,2,0,0"/>
+                        </StackPanel>
+
+                        <Border Grid.Column="4"
+                                Style="{StaticResource Chip}"
+                                Background="{DynamicResource AccentSoftBrush}"
+                                BorderBrush="{DynamicResource AccentSoftBrush}"
+                                VerticalAlignment="Center">
+                            <TextBlock Text="RUN"
+                                       Foreground="{DynamicResource TextBrush}"
+                                       FontWeight="SemiBold"/>
+                        </Border>
+                    </Grid>
+
+                    <!-- Middle status + Connect button (moved up here) -->
+                    <StackPanel Grid.Column="1"
+                                Orientation="Horizontal"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Left"
+                                Margin="18,0,0,0">
+
+                        <!-- Status -->
+                        <Border Style="{StaticResource Chip}" Margin="0,0,10,0">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="●"
+                                           FontWeight="Bold"
+                                           Margin="0,0,8,0">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="Foreground" Value="{DynamicResource BadBrush}"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsConnected}" Value="True">
+                                                    <Setter Property="Foreground" Value="{DynamicResource GoodBrush}"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+
+                                <TextBlock FontWeight="SemiBold" Foreground="{DynamicResource TextBrush}">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="Text" Value="Disconnected"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsConnected}" Value="True">
+                                                    <Setter Property="Text" Value="Connected"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </StackPanel>
+                        </Border>
+
+
+                        <Button Style="{StaticResource BtnConnect}"
+                            Content="{Binding ConnectButtonText}"
+                            Command="{Binding ToggleConnectCommand}"
+                            IsEnabled="{Binding IsBusy, Converter={StaticResource InverseBoolConverter}}"/>
+                    </StackPanel>
+
+                    <!-- Right window controls -->
+                    <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                        <ToggleButton x:Name="ThemeToggle"
+                                      Width="46" Height="32"
+                                      Margin="0,0,10,0"
+                                      Background="{DynamicResource Surface2Brush}"
+                                      BorderBrush="{DynamicResource BorderBrush2}"
+                                      BorderThickness="1"
+                                      Cursor="Hand"
+                                      Foreground="{DynamicResource TextBrush}"
+                                      Checked="ThemeToggle_Checked"
+                                      Unchecked="ThemeToggle_Unchecked"
+                                      Content="☀"/>
+
+                        <Button Style="{StaticResource TitleBtn}" Click="BtnMin_Click">
+                            <Path Stroke="{DynamicResource TextBrush}" StrokeThickness="2" Data="M6,16 L18,16"/>
+                        </Button>
+                        <Button Style="{StaticResource TitleBtn}" Click="BtnMax_Click">
+                            <Path Stroke="{DynamicResource TextBrush}" StrokeThickness="2" Data="M7,7 L17,7 L17,17 L7,17 Z"/>
+                        </Button>
+                        <Button Style="{StaticResource TitleCloseBtn}" Click="BtnClose_Click">
+                            <Path Stroke="{DynamicResource TextBrush}" StrokeThickness="2" Data="M7,7 L17,17 M17,7 L7,17"/>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+
+                <!-- Row 2 -->
+                <Grid Grid.Row="1" Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Left actions: Start + Stop -->
+                    <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,12,0">
+                        <Button Style="{StaticResource BtnAccent}" Width="110" Content="Start" Margin="0,0,10,0"
+                                IsEnabled="{Binding IsConnected}"/>
+                        <Button Style="{StaticResource Btn}" Width="110" Content="Stop"/>
+                    </StackPanel>
+
+                    <!-- Recipe + Array -->
+                    <StackPanel Grid.Column="1"
+                                Orientation="Horizontal"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Left"
+                                Margin="18,0,0,0">
+                        <Border Style="{StaticResource Chip}">
+                            <TextBlock Text="Recipe: A17 LTE"
+                                       Foreground="{DynamicResource TextBrush}"
+                                       FontWeight="SemiBold"/>
+                        </Border>
+                        <Border Style="{StaticResource Chip}" Margin="10,0,0,0">
+                            <TextBlock Text="Array: 14×15"
+                                       Foreground="{DynamicResource TextBrush}"
+                                       FontWeight="SemiBold"/>
+                        </Border>
+                    </StackPanel>
+
+                    <!-- Login -->
+                    <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+                        <Button Style="{StaticResource Btn}" Width="120" Content="Login"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <!-- ================= BODY ================= -->
+        <Grid Grid.Row="1" Margin="12">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="12"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Sidebar -->
+            <Border x:Name="NavRail"
+               Grid.Column="0"
+               Style="{StaticResource Card}"
+               Width="260"
+               Padding="8">
+                <DockPanel LastChildFill="True">
+                    <Grid DockPanel.Dock="Top" Margin="8,8,8,6">
+                        <ToggleButton x:Name="NavExpand" Style="{StaticResource SideToggle}" IsChecked="True">
+                            <Viewbox Width="18" Height="18">
+                                <Path Stroke="{DynamicResource TextBrush}" StrokeThickness="2"
+                                 Data="M4,6 L20,6 M4,12 L20,12 M4,18 L20,18"/>
+                            </Viewbox>
+                        </ToggleButton>
+                    </Grid>
+
+                    <ListBox x:Name="NavList"
+                        Margin="8,0,8,8"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        ItemContainerStyle="{StaticResource NavItemStyle}"
+                        SelectionChanged="NavList_SelectionChanged"/>
+                </DockPanel>
+
+                <!-- Animate width -->
+                <Border.Triggers>
+                    <EventTrigger RoutedEvent="ToggleButton.Checked" SourceName="NavExpand">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetName="NavRail"
+                                            Storyboard.TargetProperty="Width"
+                                            To="260"
+                                            Duration="0:0:0.20"
+                                            EasingFunction="{StaticResource EaseOut}"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="ToggleButton.Unchecked" SourceName="NavExpand">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetName="NavRail"
+                                            Storyboard.TargetProperty="Width"
+                                            To="90"
+                                            Duration="0:0:0.20"
+                                            EasingFunction="{StaticResource EaseOut}"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Border.Triggers>
+            </Border>
+
+
+            <Border Grid.Column="2"
+               Style="{StaticResource Card}"
+               Background="{DynamicResource BackBrush}"
+               Padding="0">
+
+                <Grid>
+                    <ContentControl x:Name="MainContent"
+                               HorizontalContentAlignment="Stretch"
+                               VerticalContentAlignment="Stretch"/>
+
+                    <Border x:Name="ThemeOverlay" Style="{StaticResource ThemeFadeOverlay}"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
