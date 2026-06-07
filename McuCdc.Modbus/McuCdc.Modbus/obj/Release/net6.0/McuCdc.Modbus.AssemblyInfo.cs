@@ -11,9 +11,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("McuCdc.Modbus")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+385b357c7e6f7ea24751bd64239ae97b49f8871b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb10d0d9775ef0f2e4d2d8ea1579f50131dfa9fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("McuCdc.Modbus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("McuCdc.Modbus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

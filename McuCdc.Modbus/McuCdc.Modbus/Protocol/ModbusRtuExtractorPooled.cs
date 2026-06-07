@@ -1,4 +1,4 @@
-﻿using McuCdc.Modbus.Internal;
+using McuCdc.Modbus.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +10,14 @@ namespace McuCdc.Modbus.Protocol
     internal sealed class ModbusRtuExtractorPooled
     {
         private const int MaxFrameLen = 256;
-        private readonly ByteRingBuffer _rb = new(capacity: 4096);
+        private readonly ByteRingBuffer _rb = new(capacity: 16384);
+        private int _cachedLen = -1;
 
-        public void Reset() => _rb.Clear();
+        public void Reset()
+        {
+            _rb.Clear();
+            _cachedLen = -1;
+        }
 
         public void Push(ReadOnlySpan<byte> bytes)
         {
@@ -26,51 +31,56 @@ namespace McuCdc.Modbus.Protocol
 
             while (_rb.Count >= 5)
             {
-                if (!_rb.TryPeek(0, out byte addr) || !_rb.TryPeek(1, out byte func))
-                    return false;
+                int len = _cachedLen;
+                if (len < 0)
+                {
+                    if (!_rb.TryPeek(0, out byte addr) || !_rb.TryPeek(1, out byte func))
+                        return false;
 
-                if (addr > 247)
-                {
-                    _rb.Skip(1);
-                    continue;
-                }
-
-                int len;
-                if ((func & 0x80) != 0)
-                {
-                    len = 5;
-                }
-                else
-                {
-                    switch (func)
+                    if (addr == 0 || addr > 247)
                     {
-                        case 0x01:
-                        case 0x02:
-                        case 0x03:
-                        case 0x04:
-                            if (_rb.Count < 3) return false;
-                            if (!_rb.TryPeek(2, out byte bc)) return false;
-                            if (bc > 252) { _rb.Skip(1); continue; }
-                            len = 5 + bc;
-                            break;
-
-                        case 0x05:
-                        case 0x06:
-                        case 0x0F:
-                        case 0x10:
-                            len = 8;
-                            break;
-
-                        default:
-                            _rb.Skip(1);
-                            continue;
+                        _rb.Skip(1);
+                        continue;
                     }
-                }
 
-                if (len < 5 || len > MaxFrameLen)
-                {
-                    _rb.Skip(1);
-                    continue;
+                    if ((func & 0x80) != 0)
+                    {
+                        len = 5;
+                    }
+                    else
+                    {
+                        switch (func)
+                        {
+                            case 0x01:
+                            case 0x02:
+                            case 0x03:
+                            case 0x04:
+                                if (_rb.Count < 3) return false;
+                                if (!_rb.TryPeek(2, out byte bc)) return false;
+                                if (bc > 252) { _rb.Skip(1); continue; }
+                                len = 5 + bc;
+                                break;
+
+                            case 0x05:
+                            case 0x06:
+                            case 0x0F:
+                            case 0x10:
+                                len = 8;
+                                break;
+
+                            default:
+                                _rb.Skip(1);
+                                continue;
+                        }
+                    }
+
+                    if (len < 5 || len > MaxFrameLen)
+                    {
+                        _rb.Skip(1);
+                        continue;
+                    }
+
+                    _cachedLen = len;
                 }
 
                 if (_rb.Count < len) return false;
@@ -83,11 +93,13 @@ namespace McuCdc.Modbus.Protocol
                 if (got != calc)
                 {
                     pb.Dispose();
-                    _rb.Skip(1);
+                    _rb.Skip(len);
+                    _cachedLen = -1;
                     continue;
                 }
 
                 _rb.Skip(len);
+                _cachedLen = -1;
                 frame = pb;
                 return true;
             }

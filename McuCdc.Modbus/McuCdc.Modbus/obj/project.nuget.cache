@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JEsQrwcPp+w=",
+  "dgSpecHash": "yFFKs2PyA9E=",
   "success": true,
-  "projectFilePath": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\McuCdc.Modbus.csproj",
+  "projectFilePath": "d:\\APPLICATION CODE\\sensor_vm\\APPLICATION\\Measurement_MC_App\\CDC_Dll\\McuCdc.Modbus\\McuCdc.Modbus\\McuCdc.Modbus.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.4\\microsoft.extensions.logging.abstractions.6.0.4.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\rjcp.core.environment\\0.3.0\\rjcp.core.environment.0.3.0.nupkg.sha512",

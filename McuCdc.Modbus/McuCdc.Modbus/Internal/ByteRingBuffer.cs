@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,10 +15,11 @@ namespace McuCdc.Modbus.Internal
 
         public int Count => _count;
         public int Capacity => _buf.Length;
+        public int AllocationCount { get; private set; }
 
-        public ByteRingBuffer(int capacity = 4096)
+        public ByteRingBuffer(int capacity = 16384)
         {
-            if (capacity < 256) capacity = 256;
+            if (capacity < 16384) capacity = 16384;
             _buf = new byte[capacity];
         }
 
@@ -32,6 +33,7 @@ namespace McuCdc.Modbus.Internal
             int need = _count + additional;
             if (need <= _buf.Length) return;
 
+            AllocationCount++;
             int newCap = _buf.Length;
             while (newCap < need) newCap *= 2;
 

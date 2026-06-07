@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net6.0": {
       "Microsoft.Extensions.Logging.Abstractions/6.0.4": {
@@ -477,11 +477,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\McuCdc.Modbus.csproj",
+      "projectUniqueName": "D:\\APPLICATION CODE\\sensor_vm\\APPLICATION\\Measurement_MC_App\\CDC_Dll\\McuCdc.Modbus\\McuCdc.Modbus\\McuCdc.Modbus.csproj",
       "projectName": "McuCdc.Modbus",
-      "projectPath": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\McuCdc.Modbus.csproj",
+      "projectPath": "D:\\APPLICATION CODE\\sensor_vm\\APPLICATION\\Measurement_MC_App\\CDC_Dll\\McuCdc.Modbus\\McuCdc.Modbus\\McuCdc.Modbus.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\APPLICATION CODE\\CDC_DLL\\McuCdc.Modbus\\McuCdc.Modbus\\obj\\",
+      "outputPath": "D:\\APPLICATION CODE\\sensor_vm\\APPLICATION\\Measurement_MC_App\\CDC_Dll\\McuCdc.Modbus\\McuCdc.Modbus\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -496,10 +496,12 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
+          "framework": "net6.0",
           "targetAlias": "net6.0",
           "projectReferences": {}
         }
@@ -514,10 +516,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net6.0": {
+        "framework": "net6.0",
         "targetAlias": "net6.0",
         "dependencies": {
           "RJCP.SerialPortStream": {
@@ -541,7 +544,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

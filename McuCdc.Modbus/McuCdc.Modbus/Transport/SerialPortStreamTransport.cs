@@ -11,13 +11,13 @@ namespace McuCdc.Modbus.Transport
     {
         private readonly ClientOptions _opt;
 
-        // _gate chỉ dùng để bảo vệ open/close + swap _port
+        
         private readonly object _gate = new();
 
         private SerialPortStream? _port;
 
-        // đóng cưỡng bức để cắt I/O đang treo
-        private int _closing; // 0 = open, 1 = closing/closed
+        
+        private int _closing; 
 
         public bool IsOpen
         {
